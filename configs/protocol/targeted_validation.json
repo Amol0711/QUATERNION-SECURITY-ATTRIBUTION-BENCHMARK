@@ -1,0 +1,57 @@
+{
+  "protocol_id": "QSA-TARGETED-VALIDATION-V1",
+  "parent_protocol_id": "QSA-PROTOCOL-V1",
+  "parent_protocol_sha256": "72314ad1e610975c8c90c45bec3d7b65d64f98945baf77d93555ff035f1647c5",
+  "scope": "Targeted validation of permutation-query tightness and fixed-header NPCR calibration.",
+  "b13_query_tightness": {
+    "method_id": "B13_permutation_only",
+    "alphabet_size": 256,
+    "image_id": "astronaut",
+    "sizes": [
+      96,
+      256,
+      512
+    ],
+    "context_repetitions": 4,
+    "query_regimes": [
+      "k_star_minus_one",
+      "k_star"
+    ],
+    "probe_encoding": "little-endian base-256 digits of the input byte-position index",
+    "required_outputs": [
+      "observed code consistency",
+      "mapping identifiability",
+      "unique and ambiguous codeword classes",
+      "exact target recovery at k_star"
+    ]
+  },
+  "b23_npcr_power": {
+    "method_id": "B23_secure_fixed_header",
+    "protocol": "P2_fresh_randomness",
+    "projection_id": "aggregate_full_body",
+    "suffix_projection_id": "aggregate_cryptographic_suffix",
+    "alphabet_size": 256,
+    "fixed_equal_coordinates": 32,
+    "primary_familywise_alpha": 0.01,
+    "sizes": [
+      256,
+      512
+    ],
+    "expected_holm_family_sizes": {
+      "256": 960,
+      "512": 528
+    },
+    "alternative_model": "The 32 fixed prefix coordinates agree deterministically; the remaining AES-GCM suffix-coordinate pairs follow the independent ideal-byte model.",
+    "multiplicity_calibration": "Exact first-step Holm familywise power under independent registered tests. Any Holm rejection occurs iff at least one p-value is at most alpha/m.",
+    "observed_comparison": "Compare model probabilities with an independently regenerated B23 family. Compatibility is a calibration result and not a primitive-security test."
+  },
+  "replication_policy": {
+    "runs": [
+      "primary_execution",
+      "independent_execution"
+    ],
+    "same_scientific_schedule": true,
+    "run_label_excluded_from_serialized_objects": true,
+    "deterministic_artifacts_require_exact_canonical_match": true
+  }
+}

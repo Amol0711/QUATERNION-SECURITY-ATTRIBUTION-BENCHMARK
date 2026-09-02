@@ -1,0 +1,629 @@
+{
+  "global_leakage_policy": {
+    "report_descriptor_only_orbit": true,
+    "report_post_object_public_recovery": true,
+    "report_prechallenge_L_class": true,
+    "rules": [
+      "shape-only message space = 24HW bits",
+      "PCA pixel-multiset orbit = log2((HW)!/product multiplicity!)",
+      "curvature residue orbit = sum_s log2(n_s!/product multiplicity_s!)",
+      "explicit preview has no asserted formal lower bound; report only the configured-corpus collision class",
+      "public inversion sets post-object recovery entropy to zero but does not silently redefine the prechallenge leakage class"
+    ],
+    "symbol": "L"
+  },
+  "method_count": 24,
+  "methods": [
+    {
+      "authenticated_coverage": [
+        "canonical_header",
+        "nonce",
+        "public_payload",
+        "protected_payload"
+      ],
+      "body_metric_domain": "rgb_u8",
+      "descriptor_entropy_rule": "shape_only_message_space",
+      "deterministic_plaintext_leakage": [
+        "image_shape",
+        "field_lengths",
+        "constant_descriptor"
+      ],
+      "leakage_equivalence_rule": "same_shape_lengths_and_declared_deterministic_fields",
+      "method_id": "B01_aes_gcm",
+      "metric_body_source": "protected_payload",
+      "ordinal": 1,
+      "permitted_functionality": [],
+      "post_object_recovery": "not_asserted",
+      "prechallenge_entropy_rule": "shape_only_message_space",
+      "public_randomness": [
+        "nonce"
+      ],
+      "public_recovery_material": []
+    },
+    {
+      "authenticated_coverage": [
+        "canonical_header",
+        "nonce",
+        "public_payload",
+        "protected_payload"
+      ],
+      "body_metric_domain": "rgb_u8",
+      "descriptor_entropy_rule": "shape_only_message_space",
+      "deterministic_plaintext_leakage": [
+        "image_shape",
+        "field_lengths",
+        "constant_descriptor"
+      ],
+      "leakage_equivalence_rule": "same_shape_lengths_and_declared_deterministic_fields",
+      "method_id": "B02_chacha20_poly1305",
+      "metric_body_source": "protected_payload",
+      "ordinal": 2,
+      "permitted_functionality": [],
+      "post_object_recovery": "not_asserted",
+      "prechallenge_entropy_rule": "shape_only_message_space",
+      "public_randomness": [
+        "nonce"
+      ],
+      "public_recovery_material": []
+    },
+    {
+      "authenticated_coverage": [
+        "canonical_header",
+        "nonce",
+        "public_payload",
+        "protected_payload"
+      ],
+      "body_metric_domain": "rgb_u8",
+      "descriptor_entropy_rule": "shape_only_message_space",
+      "deterministic_plaintext_leakage": [
+        "image_shape",
+        "field_lengths",
+        "constant_descriptor"
+      ],
+      "leakage_equivalence_rule": "same_shape_lengths_and_declared_deterministic_fields",
+      "method_id": "B03_shake_hmac",
+      "metric_body_source": "protected_payload",
+      "ordinal": 3,
+      "permitted_functionality": [],
+      "post_object_recovery": "not_asserted",
+      "prechallenge_entropy_rule": "shape_only_message_space",
+      "public_randomness": [
+        "nonce"
+      ],
+      "public_recovery_material": []
+    },
+    {
+      "authenticated_coverage": [],
+      "body_metric_domain": "rgb_u8",
+      "descriptor_entropy_rule": "shape_only_message_space",
+      "deterministic_plaintext_leakage": [
+        "image_shape",
+        "field_lengths",
+        "constant_descriptor"
+      ],
+      "leakage_equivalence_rule": "same_shape_lengths_and_declared_deterministic_fields",
+      "method_id": "B04_public_high_entropy",
+      "metric_body_source": "protected_payload",
+      "ordinal": 4,
+      "permitted_functionality": [],
+      "post_object_recovery": "zero_via_public_inverse",
+      "prechallenge_entropy_rule": "shape_only_message_space",
+      "public_randomness": [
+        "public nonce"
+      ],
+      "public_recovery_material": [
+        "serialized nonce",
+        "public SHAKE algorithm",
+        "method identifier"
+      ]
+    },
+    {
+      "authenticated_coverage": [],
+      "body_metric_domain": "int32_serialized",
+      "descriptor_entropy_rule": "shape_only_message_space",
+      "deterministic_plaintext_leakage": [
+        "image_shape",
+        "field_lengths",
+        "complete public invertible payload",
+        "constant descriptor"
+      ],
+      "leakage_equivalence_rule": "identical complete public payload",
+      "method_id": "B05_identity",
+      "metric_body_source": "public_payload",
+      "ordinal": 5,
+      "permitted_functionality": [],
+      "post_object_recovery": "zero_via_public_inverse",
+      "prechallenge_entropy_rule": "singleton_complete_leakage_class",
+      "public_randomness": [],
+      "public_recovery_material": [
+        "public payload",
+        "public inverse"
+      ]
+    },
+    {
+      "authenticated_coverage": [],
+      "body_metric_domain": "int32_serialized",
+      "descriptor_entropy_rule": "shape_only_message_space",
+      "deterministic_plaintext_leakage": [
+        "image_shape",
+        "field_lengths",
+        "complete public invertible payload",
+        "constant RCT descriptor"
+      ],
+      "leakage_equivalence_rule": "identical complete public payload",
+      "method_id": "B06_reversible_color",
+      "metric_body_source": "public_payload",
+      "ordinal": 6,
+      "permitted_functionality": [],
+      "post_object_recovery": "zero_via_public_inverse",
+      "prechallenge_entropy_rule": "singleton_complete_leakage_class",
+      "public_randomness": [],
+      "public_recovery_material": [
+        "public payload",
+        "public inverse"
+      ]
+    },
+    {
+      "authenticated_coverage": [],
+      "body_metric_domain": "int32_serialized",
+      "descriptor_entropy_rule": "pca_pixel_multiset_orbit",
+      "deterministic_plaintext_leakage": [
+        "image_shape",
+        "field_lengths",
+        "PCA descriptor",
+        "complete public invertible payload"
+      ],
+      "leakage_equivalence_rule": "identical PCA descriptor and complete public payload",
+      "method_id": "B07_pca_klt",
+      "metric_body_source": "public_payload",
+      "ordinal": 7,
+      "permitted_functionality": [],
+      "post_object_recovery": "zero_via_public_inverse",
+      "prechallenge_entropy_rule": "singleton_complete_leakage_class",
+      "public_randomness": [],
+      "public_recovery_material": [
+        "public payload",
+        "PCA descriptor",
+        "public inverse"
+      ]
+    },
+    {
+      "authenticated_coverage": [],
+      "body_metric_domain": "int32_serialized",
+      "descriptor_entropy_rule": "shape_only_message_space",
+      "deterministic_plaintext_leakage": [
+        "image_shape",
+        "field_lengths",
+        "public rotation descriptor",
+        "complete public invertible payload"
+      ],
+      "leakage_equivalence_rule": "identical public transform context and complete public payload",
+      "method_id": "B08_random_so3",
+      "metric_body_source": "public_payload",
+      "ordinal": 8,
+      "permitted_functionality": [],
+      "post_object_recovery": "zero_via_public_inverse",
+      "prechallenge_entropy_rule": "singleton_complete_leakage_class",
+      "public_randomness": [
+        "public transform seed"
+      ],
+      "public_recovery_material": [
+        "public payload",
+        "rotation descriptor",
+        "public inverse"
+      ]
+    },
+    {
+      "authenticated_coverage": [],
+      "body_metric_domain": "int32_serialized",
+      "descriptor_entropy_rule": "shape_only_message_space",
+      "deterministic_plaintext_leakage": [
+        "image_shape",
+        "field_lengths",
+        "constant rotation descriptor",
+        "complete public invertible payload"
+      ],
+      "leakage_equivalence_rule": "identical complete public payload",
+      "method_id": "B09_fixed_axis_quaternion",
+      "metric_body_source": "public_payload",
+      "ordinal": 9,
+      "permitted_functionality": [],
+      "post_object_recovery": "zero_via_public_inverse",
+      "prechallenge_entropy_rule": "singleton_complete_leakage_class",
+      "public_randomness": [],
+      "public_recovery_material": [
+        "public payload",
+        "rotation descriptor",
+        "public inverse"
+      ]
+    },
+    {
+      "authenticated_coverage": [],
+      "body_metric_domain": "int32_serialized",
+      "descriptor_entropy_rule": "shape_only_message_space",
+      "deterministic_plaintext_leakage": [
+        "image_shape",
+        "field_lengths",
+        "Case-II schedule descriptor",
+        "complete public invertible payload"
+      ],
+      "leakage_equivalence_rule": "identical complete public payload",
+      "method_id": "B10_caseii",
+      "metric_body_source": "public_payload",
+      "ordinal": 10,
+      "permitted_functionality": [],
+      "post_object_recovery": "zero_via_public_inverse",
+      "prechallenge_entropy_rule": "singleton_complete_leakage_class",
+      "public_randomness": [],
+      "public_recovery_material": [
+        "public payload",
+        "schedule descriptor",
+        "public inverse"
+      ]
+    },
+    {
+      "authenticated_coverage": [],
+      "body_metric_domain": "int32_serialized",
+      "descriptor_entropy_rule": "curvature_residue_orbit",
+      "deterministic_plaintext_leakage": [
+        "image_shape",
+        "field_lengths",
+        "curvature descriptor",
+        "complete public invertible payload"
+      ],
+      "leakage_equivalence_rule": "identical curvature descriptor and complete public payload",
+      "method_id": "B11_curvature_caseii",
+      "metric_body_source": "public_payload",
+      "ordinal": 11,
+      "permitted_functionality": [],
+      "post_object_recovery": "zero_via_public_inverse",
+      "prechallenge_entropy_rule": "singleton_complete_leakage_class",
+      "public_randomness": [],
+      "public_recovery_material": [
+        "public payload",
+        "curvature descriptor",
+        "public inverse"
+      ]
+    },
+    {
+      "authenticated_coverage": [],
+      "body_metric_domain": "rgb_u8",
+      "descriptor_entropy_rule": "shape_only_message_space",
+      "deterministic_plaintext_leakage": [
+        "image_shape",
+        "field_lengths",
+        "constant_descriptor"
+      ],
+      "leakage_equivalence_rule": "same_shape_lengths_and_declared_deterministic_fields",
+      "method_id": "B12_chebyshev_only",
+      "metric_body_source": "protected_payload",
+      "ordinal": 12,
+      "permitted_functionality": [],
+      "post_object_recovery": "zero_via_public_inverse",
+      "prechallenge_entropy_rule": "shape_only_message_space",
+      "public_randomness": [
+        "public nonce"
+      ],
+      "public_recovery_material": [
+        "serialized nonce",
+        "public Chebyshev algorithm"
+      ]
+    },
+    {
+      "authenticated_coverage": [],
+      "body_metric_domain": "opaque_u8",
+      "descriptor_entropy_rule": "shape_only_message_space",
+      "deterministic_plaintext_leakage": [
+        "image_shape",
+        "field_lengths",
+        "constant_descriptor"
+      ],
+      "leakage_equivalence_rule": "same_shape_lengths_and_declared_deterministic_fields",
+      "method_id": "B13_permutation_only",
+      "metric_body_source": "protected_payload",
+      "ordinal": 13,
+      "permitted_functionality": [],
+      "post_object_recovery": "not_asserted",
+      "prechallenge_entropy_rule": "shape_only_message_space",
+      "public_randomness": [
+        "nonce-conditioned secret permutation"
+      ],
+      "public_recovery_material": []
+    },
+    {
+      "authenticated_coverage": [],
+      "body_metric_domain": "rgb_u8",
+      "descriptor_entropy_rule": "shape_only_message_space",
+      "deterministic_plaintext_leakage": [
+        "image_shape",
+        "field_lengths",
+        "constant_descriptor"
+      ],
+      "leakage_equivalence_rule": "same_shape_lengths_and_declared_deterministic_fields",
+      "method_id": "B14_diffusion_only",
+      "metric_body_source": "protected_payload",
+      "ordinal": 14,
+      "permitted_functionality": [],
+      "post_object_recovery": "not_asserted",
+      "prechallenge_entropy_rule": "shape_only_message_space",
+      "public_randomness": [
+        "nonce-conditioned secret diffusion state"
+      ],
+      "public_recovery_material": []
+    },
+    {
+      "authenticated_coverage": [
+        "canonical_header",
+        "nonce",
+        "public_payload",
+        "protected_payload"
+      ],
+      "body_metric_domain": "opaque_u8",
+      "descriptor_entropy_rule": "shape_only_message_space",
+      "deterministic_plaintext_leakage": [
+        "image_shape",
+        "field_lengths",
+        "constant Case-II schedule descriptor"
+      ],
+      "leakage_equivalence_rule": "same_shape_lengths_and_declared_deterministic_fields",
+      "method_id": "B15_geometry_shake_hmac",
+      "metric_body_source": "protected_payload",
+      "ordinal": 15,
+      "permitted_functionality": [],
+      "post_object_recovery": "not_asserted",
+      "prechallenge_entropy_rule": "shape_only_message_space",
+      "public_randomness": [
+        "nonce"
+      ],
+      "public_recovery_material": []
+    },
+    {
+      "authenticated_coverage": [
+        "canonical_header",
+        "nonce",
+        "public_payload",
+        "protected_payload"
+      ],
+      "body_metric_domain": "opaque_u8",
+      "descriptor_entropy_rule": "shape_only_message_space",
+      "deterministic_plaintext_leakage": [
+        "image_shape",
+        "field_lengths",
+        "constant Case-II schedule descriptor"
+      ],
+      "leakage_equivalence_rule": "same_shape_lengths_and_declared_deterministic_fields",
+      "method_id": "B16_geometry_aes_gcm",
+      "metric_body_source": "protected_payload",
+      "ordinal": 16,
+      "permitted_functionality": [],
+      "post_object_recovery": "not_asserted",
+      "prechallenge_entropy_rule": "shape_only_message_space",
+      "public_randomness": [
+        "nonce"
+      ],
+      "public_recovery_material": []
+    },
+    {
+      "authenticated_coverage": [
+        "canonical_header",
+        "nonce",
+        "public_payload",
+        "protected_payload"
+      ],
+      "body_metric_domain": "opaque_u8",
+      "descriptor_entropy_rule": "curvature_residue_orbit",
+      "deterministic_plaintext_leakage": [
+        "image_shape",
+        "field_lengths",
+        "curvature descriptor",
+        "Case-II schedule descriptor"
+      ],
+      "leakage_equivalence_rule": "same shape and identical curvature/Case-II descriptors",
+      "method_id": "B17_tip_r0_emulation",
+      "metric_body_source": "protected_payload",
+      "ordinal": 17,
+      "permitted_functionality": [],
+      "post_object_recovery": "not_asserted",
+      "prechallenge_entropy_rule": "curvature_residue_orbit",
+      "public_randomness": [
+        "nonce-conditioned mask, permutation, and diffusion state"
+      ],
+      "public_recovery_material": []
+    },
+    {
+      "authenticated_coverage": [],
+      "body_metric_domain": "opaque_u8",
+      "descriptor_entropy_rule": "shape_only_message_space",
+      "deterministic_plaintext_leakage": [
+        "image_shape",
+        "field_lengths",
+        "constant_descriptor"
+      ],
+      "leakage_equivalence_rule": "same_shape_lengths_and_declared_deterministic_fields",
+      "method_id": "B18_external_quaternion_feistel",
+      "metric_body_source": "protected_payload",
+      "ordinal": 18,
+      "permitted_functionality": [],
+      "post_object_recovery": "not_asserted",
+      "prechallenge_entropy_rule": "shape_only_message_space",
+      "public_randomness": [
+        "nonce-conditioned secret Feistel key schedule"
+      ],
+      "public_recovery_material": []
+    },
+    {
+      "authenticated_coverage": [],
+      "body_metric_domain": "opaque_u8",
+      "descriptor_entropy_rule": "shape_only_message_space",
+      "deterministic_plaintext_leakage": [
+        "image_shape",
+        "field_lengths",
+        "constant_descriptor"
+      ],
+      "leakage_equivalence_rule": "same_shape_lengths_and_declared_deterministic_fields",
+      "method_id": "B19_external_chaos_pd",
+      "metric_body_source": "protected_payload",
+      "ordinal": 19,
+      "permitted_functionality": [],
+      "post_object_recovery": "not_asserted",
+      "prechallenge_entropy_rule": "shape_only_message_space",
+      "public_randomness": [
+        "nonce-conditioned secret diffusion state"
+      ],
+      "public_recovery_material": []
+    },
+    {
+      "authenticated_coverage": [
+        "canonical_header",
+        "nonce",
+        "public_payload",
+        "protected_payload"
+      ],
+      "body_metric_domain": "rgb_u8",
+      "descriptor_entropy_rule": "preview_collision_class_empirical_only",
+      "deterministic_plaintext_leakage": [
+        "image_shape",
+        "field_lengths",
+        "explicit public PNG preview"
+      ],
+      "leakage_equivalence_rule": "same shape, lengths, and byte-identical public preview",
+      "method_id": "B20_full_aead_explicit_preview",
+      "metric_body_source": "protected_payload",
+      "ordinal": 20,
+      "permitted_functionality": [
+        "public 24x24 thumbnail preview"
+      ],
+      "post_object_recovery": "not_asserted",
+      "prechallenge_entropy_rule": "preview_preimage_not_formally_lower_bounded",
+      "public_randomness": [
+        "nonce"
+      ],
+      "public_recovery_material": []
+    },
+    {
+      "authenticated_coverage": [],
+      "body_metric_domain": "rgb_u8",
+      "descriptor_entropy_rule": "shape_only_message_space",
+      "deterministic_plaintext_leakage": [
+        "image_shape",
+        "field_lengths",
+        "constant_descriptor"
+      ],
+      "leakage_equivalence_rule": "same_shape_lengths_and_declared_deterministic_fields",
+      "method_id": "B21_public_fresh_pad",
+      "metric_body_source": "protected_payload",
+      "ordinal": 21,
+      "permitted_functionality": [],
+      "post_object_recovery": "zero_via_public_inverse",
+      "prechallenge_entropy_rule": "shape_only_message_space",
+      "public_randomness": [
+        "published full-length pad"
+      ],
+      "public_recovery_material": [
+        "published pad",
+        "modular subtraction"
+      ]
+    },
+    {
+      "authenticated_coverage": [],
+      "body_metric_domain": "opaque_u8",
+      "descriptor_entropy_rule": "shape_only_message_space",
+      "deterministic_plaintext_leakage": [
+        "image_shape",
+        "field_lengths",
+        "constant_descriptor"
+      ],
+      "leakage_equivalence_rule": "same_shape_lengths_and_declared_deterministic_fields",
+      "method_id": "B22_public_wideblock_prp",
+      "metric_body_source": "protected_payload",
+      "ordinal": 22,
+      "permitted_functionality": [],
+      "post_object_recovery": "zero_via_public_inverse",
+      "prechallenge_entropy_rule": "shape_only_message_space",
+      "public_randomness": [
+        "published 256-bit Feistel key"
+      ],
+      "public_recovery_material": [
+        "published key",
+        "public Feistel inverse"
+      ]
+    },
+    {
+      "authenticated_coverage": [
+        "canonical_header",
+        "nonce",
+        "public_payload",
+        "protected_payload"
+      ],
+      "body_metric_domain": "fixed_prefix_rgb_suffix",
+      "descriptor_entropy_rule": "shape_only_message_space",
+      "deterministic_plaintext_leakage": [
+        "image_shape",
+        "field_lengths",
+        "constant_descriptor"
+      ],
+      "leakage_equivalence_rule": "same_shape_lengths_and_declared_deterministic_fields",
+      "method_id": "B23_secure_fixed_header",
+      "metric_body_source": "protected_payload",
+      "ordinal": 23,
+      "permitted_functionality": [],
+      "post_object_recovery": "not_asserted",
+      "prechallenge_entropy_rule": "shape_only_message_space",
+      "public_randomness": [
+        "nonce"
+      ],
+      "public_recovery_material": []
+    },
+    {
+      "authenticated_coverage": [
+        "canonical_header",
+        "nonce",
+        "public_payload",
+        "protected_payload"
+      ],
+      "body_metric_domain": "rgb_u8",
+      "descriptor_entropy_rule": "shape_only_message_space",
+      "deterministic_plaintext_leakage": [
+        "image_shape",
+        "field_lengths",
+        "constant_descriptor"
+      ],
+      "leakage_equivalence_rule": "same_shape_lengths_and_declared_deterministic_fields",
+      "method_id": "B24_aes_gcm_siv",
+      "metric_body_source": "protected_payload",
+      "ordinal": 24,
+      "permitted_functionality": [],
+      "post_object_recovery": "not_asserted",
+      "prechallenge_entropy_rule": "shape_only_message_space",
+      "public_randomness": [
+        "nonce"
+      ],
+      "public_recovery_material": []
+    }
+  ],
+  "object_model": {
+    "complete_public_view": [
+      "canonical_header",
+      "field_lengths",
+      "nonce",
+      "public_payload",
+      "protected_payload",
+      "tag"
+    ],
+    "evaluation_identifiers_in_object": false,
+    "external_log_fields": [
+      "image_id",
+      "run_id",
+      "pair_id",
+      "key_index",
+      "state_index",
+      "perturbation_id"
+    ],
+    "metadata_profile": "security-view-v2"
+  },
+  "protocol_id": "QSA-PROTOCOL-V1",
+  "protocol_sha256": "72314ad1e610975c8c90c45bec3d7b65d64f98945baf77d93555ff035f1647c5",
+  "registry_id": "QSA-LEAKAGE-REGISTRY-V1",
+  "schema_id": "QSA-LEAKAGE-REGISTRY-SCHEMA-V1",
+  "schema_version": 1
+}

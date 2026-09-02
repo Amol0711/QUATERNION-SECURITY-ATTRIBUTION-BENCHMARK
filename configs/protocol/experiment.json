@@ -1,0 +1,391 @@
+{
+  "protocol_id": "QSA-PROTOCOL-V1",
+  "schema_version": 1,
+  "benchmark_profile": "extended",
+  "master_seed": 20260807,
+  "master_key_hex": "00112233445566778899aabbccddeeff102132435465768798a9bacbdcedfe0f",
+  "object_model": {
+    "metadata_profile": "security-view-v2",
+    "evaluation_identifiers_in_object": false,
+    "external_log_fields": [
+      "image_id",
+      "run_id",
+      "pair_id",
+      "key_index",
+      "state_index",
+      "perturbation_id"
+    ],
+    "complete_public_view": [
+      "canonical_header",
+      "field_lengths",
+      "nonce",
+      "public_payload",
+      "protected_payload",
+      "tag"
+    ]
+  },
+  "methods": [
+    "B01_aes_gcm",
+    "B02_chacha20_poly1305",
+    "B03_shake_hmac",
+    "B04_public_high_entropy",
+    "B05_identity",
+    "B06_reversible_color",
+    "B07_pca_klt",
+    "B08_random_so3",
+    "B09_fixed_axis_quaternion",
+    "B10_caseii",
+    "B11_curvature_caseii",
+    "B12_chebyshev_only",
+    "B13_permutation_only",
+    "B14_diffusion_only",
+    "B15_geometry_shake_hmac",
+    "B16_geometry_aes_gcm",
+    "B17_tip_r0_emulation",
+    "B18_external_quaternion_feistel",
+    "B19_external_chaos_pd",
+    "B20_full_aead_explicit_preview",
+    "B21_public_fresh_pad",
+    "B22_public_wideblock_prp",
+    "B23_secure_fixed_header",
+    "B24_aes_gcm_siv"
+  ],
+  "extended_controls": [
+    "B21_public_fresh_pad",
+    "B22_public_wideblock_prp",
+    "B23_secure_fixed_header",
+    "B24_aes_gcm_siv"
+  ],
+  "corpus": {
+    "image_ids": [
+      "syn_black",
+      "syn_white",
+      "syn_gray",
+      "syn_red",
+      "syn_ramp_h",
+      "syn_ramp_v",
+      "syn_impulse",
+      "syn_checker",
+      "syn_basis",
+      "syn_lowrank",
+      "syn_bars",
+      "syn_periodic",
+      "astronaut",
+      "coffee",
+      "chelsea",
+      "rocket",
+      "brick",
+      "grass",
+      "hubble",
+      "ihc",
+      "retina",
+      "logo",
+      "colorwheel",
+      "horse"
+    ],
+    "sizes": [
+      256,
+      512
+    ],
+    "primary_panel": [
+      "astronaut",
+      "coffee",
+      "chelsea",
+      "hubble",
+      "retina",
+      "rocket",
+      "syn_checker",
+      "syn_ramp_h",
+      "syn_ramp_v",
+      "syn_impulse",
+      "syn_lowrank",
+      "syn_periodic"
+    ],
+    "ensemble_panel": [
+      "astronaut",
+      "retina",
+      "syn_checker",
+      "syn_lowrank"
+    ],
+    "secondary_panel": [
+      "astronaut",
+      "coffee",
+      "chelsea",
+      "hubble",
+      "retina",
+      "rocket",
+      "syn_checker",
+      "syn_ramp_h",
+      "syn_ramp_v",
+      "syn_impulse",
+      "syn_lowrank",
+      "syn_periodic"
+    ],
+    "timing_panel": [
+      "astronaut",
+      "retina",
+      "syn_checker",
+      "syn_lowrank"
+    ],
+    "natural_generation": "native scikit-image source, bilinear antialiased resize, range preservation, round-to-nearest, and uint8 clipping",
+    "synthetic_generation": "analytic deterministic generation at each requested size",
+    "color_space": "nonlinear sRGB",
+    "dtype": "uint8"
+  },
+  "protocols": {
+    "P1_common_context": {
+      "code": "P1-CC",
+      "same_master_key": true,
+      "same_nonce": true,
+      "same_public_seed": true,
+      "same_pregenerated_public_material": true,
+      "plaintext_derived_descriptor_policy": "recompute unless an explicitly registered fixed-map control is used",
+      "interpretation": "common effective external context; normal for deterministic/public controls and forced-reuse misuse for freshness-required methods"
+    },
+    "P2_fresh_randomness": {
+      "code": "P2-FR",
+      "same_master_key": true,
+      "same_nonce": false,
+      "same_public_seed": false,
+      "same_pregenerated_public_material": false,
+      "plaintext_derived_descriptor_policy": "recompute",
+      "interpretation": "correct-use independent fresh randomness; deterministic methods are marked not applicable"
+    }
+  },
+  "perturbations": {
+    "primary": [
+      "SP_CENTER_R_UNIT",
+      "SP_CENTER_G_UNIT",
+      "SP_CENTER_B_UNIT",
+      "SP_QUARTER_R_UNIT",
+      "SP_QUARTER_G_UNIT",
+      "SP_QUARTER_B_UNIT",
+      "SP_MAXGRAD_R_UNIT",
+      "SP_MAXGRAD_G_UNIT",
+      "SP_MAXGRAD_B_UNIT",
+      "SP_MINGRAD_R_UNIT",
+      "SP_MINGRAD_G_UNIT",
+      "SP_MINGRAD_B_UNIT"
+    ],
+    "secondary": [
+      "SP_CENTER_R_MAG17",
+      "SP_CENTER_G_MAG17",
+      "SP_CENTER_B_MAG17",
+      "SP_CENTER_R_MAG127",
+      "SP_CENTER_G_MAG127",
+      "SP_CENTER_B_MAG127",
+      "PATCH8_CENTER_R_UNIT",
+      "PATCH8_CENTER_G_UNIT",
+      "PATCH8_CENTER_B_UNIT",
+      "SPARSE16_RGB_UNIT",
+      "CHECKER_LSB_ALL",
+      "ROW_CENTER_ALL_UNIT"
+    ],
+    "update_rule": "add the declared magnitude when representable, otherwise subtract it; modular wrap is forbidden",
+    "gradient_tie_break": "lexicographically smallest interior coordinate"
+  },
+  "execution_tiers": {
+    "T1_primary_all_methods": {
+      "methods": "all",
+      "images": "primary_panel",
+      "sizes": [
+        256,
+        512
+      ],
+      "perturbations": "primary",
+      "key_repetitions": 1,
+      "state_repetitions_by_size": {
+        "256": 2,
+        "512": 1
+      },
+      "protocols": [
+        "P1_common_context",
+        "P2_fresh_randomness"
+      ]
+    },
+    "T2_ensemble_calibration": {
+      "methods": [
+        "B01_aes_gcm",
+        "B04_public_high_entropy",
+        "B13_permutation_only",
+        "B16_geometry_aes_gcm",
+        "B21_public_fresh_pad",
+        "B22_public_wideblock_prp",
+        "B23_secure_fixed_header",
+        "B24_aes_gcm_siv"
+      ],
+      "images": "ensemble_panel",
+      "sizes": [
+        256,
+        512
+      ],
+      "perturbations": [
+        "SP_CENTER_R_UNIT",
+        "SP_CENTER_G_UNIT",
+        "SP_CENTER_B_UNIT"
+      ],
+      "key_repetitions": 1,
+      "state_repetitions_by_size": {
+        "256": 32,
+        "512": 32
+      },
+      "protocols": [
+        "P1_common_context",
+        "P2_fresh_randomness"
+      ]
+    },
+    "T3_secondary_structure": {
+      "methods": [
+        "B01_aes_gcm",
+        "B04_public_high_entropy",
+        "B07_pca_klt",
+        "B10_caseii",
+        "B13_permutation_only",
+        "B14_diffusion_only",
+        "B16_geometry_aes_gcm",
+        "B17_tip_r0_emulation",
+        "B21_public_fresh_pad",
+        "B22_public_wideblock_prp",
+        "B23_secure_fixed_header",
+        "B24_aes_gcm_siv"
+      ],
+      "images": "secondary_panel",
+      "sizes": [
+        256
+      ],
+      "perturbations": "secondary",
+      "key_repetitions": 1,
+      "state_repetitions_by_size": {
+        "256": 2
+      },
+      "protocols": [
+        "P1_common_context",
+        "P2_fresh_randomness"
+      ]
+    }
+  },
+  "statistics": {
+    "alphabet_size": 256,
+    "primary_alpha": 0.01,
+    "sensitivity_alpha_levels": [
+      0.05,
+      0.001
+    ],
+    "npcr_null": "exact lower-tail Binomial(n,255/256)",
+    "uaci_null": "two-sided normal critical interval from exact independent-byte coordinate moments",
+    "multiplicity": "Holm step-down within method x protocol x size x body projection x channel across perturbations",
+    "per_channel_rule": "only for a registered RGB-aligned uint8 body or RGB-aligned cryptographic suffix",
+    "int32_rule": "descriptive aggregate byte differences only; no ideal-byte inferential decision",
+    "ensemble_outputs": [
+      "mean",
+      "standard_deviation",
+      "ideal_standard_deviation",
+      "pass_probability",
+      "pairwise_pass_fail_flip_probability"
+    ],
+    "entropy_domains": [
+      "protected_payload",
+      "complete_object"
+    ],
+    "entropy_strata": [
+      "natural",
+      "synthetic"
+    ],
+    "distinguisher_label_permutations": 5000,
+    "single_class_fold_auc": "NA",
+    "lofo_role": "exploratory declared-null analysis"
+  },
+  "endpoint_policy": {
+    "primary_endpoint": "attack-leakage-regime matrix",
+    "columns": [
+      "exact_public_inversion",
+      "permutation_or_affine_recovery",
+      "learned_reconstruction",
+      "protected_body_distinguishing",
+      "fresh_forgery",
+      "forced_reuse_relation",
+      "permitted_preview_leakage",
+      "correct_use_confidentiality_class"
+    ],
+    "forbid_primary_scalar_attack_score": true,
+    "regime_labels": [
+      "correct_use",
+      "forced_reuse_misuse",
+      "public_invertible_control",
+      "permitted_leakage_control",
+      "deterministic_no_freshness"
+    ],
+    "row_rule": "every numerical row has exactly one protocol, operation-regime label, metric-domain label, and applicability value"
+  },
+  "leakage": {
+    "symbol": "L",
+    "report_prechallenge_L_class": true,
+    "report_descriptor_only_orbit": true,
+    "report_post_object_public_recovery": true,
+    "rules": [
+      "shape-only message space = 24HW bits",
+      "PCA pixel-multiset orbit = log2((HW)!/product multiplicity!)",
+      "curvature residue orbit = sum_s log2(n_s!/product multiplicity_s!)",
+      "explicit preview has no asserted formal lower bound; report only the configured-corpus collision class",
+      "public inversion sets post-object recovery entropy to zero but does not silently redefine the prechallenge leakage class"
+    ]
+  },
+  "timing": {
+    "sizes": [
+      96,
+      256,
+      512
+    ],
+    "warmups": 3,
+    "timed_repetitions": 15,
+    "memory_repetitions": 5,
+    "method_order_seed": 2026080713,
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    },
+    "forward_stages": [
+      "input_encode",
+      "descriptor_compute",
+      "geometry_forward",
+      "transform_serialize",
+      "primitive_protect",
+      "envelope_serialize",
+      "total_encrypt"
+    ],
+    "inverse_stages": [
+      "envelope_parse",
+      "primitive_unprotect",
+      "transform_deserialize",
+      "geometry_inverse",
+      "release_check",
+      "output_decode",
+      "total_decrypt"
+    ],
+    "shared_setup_excluded": true,
+    "gc_disabled_inside_timed_region": true,
+    "memory_run_separate_from_timing": true,
+    "fit_model": "t = beta0 + beta_geo * pixel_count + beta_primitive * protected_bytes",
+    "hold_conditions": {
+      "negative_fitted_coefficient": true,
+      "adjusted_r2_below": 0.95,
+      "maximum_relative_residual_above": 0.15,
+      "median_stage_sum_relative_error_above": 0.05
+    }
+  },
+  "replication_policy": {
+    "independent_runs": 2,
+    "deterministic_outputs_must_hash_match": true,
+    "timing_outputs_excluded_from_hash_equality": true,
+    "all_method_objects_regenerated": true,
+    "primary_output_root": "results/experiment/primary_execution",
+    "independent_output_root": "results/experiment/independent_execution"
+  },
+  "outputs": {
+    "corpus_root": "data/generated",
+    "manifest": "data/manifests/experiment_dataset.csv",
+    "write_control_objects": true
+  }
+}

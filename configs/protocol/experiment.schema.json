@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "benchmark_profile": {
+      "const": "extended"
+    },
+    "corpus": {
+      "required": [
+        "image_ids",
+        "sizes",
+        "primary_panel",
+        "ensemble_panel",
+        "secondary_panel",
+        "timing_panel",
+        "natural_generation",
+        "synthetic_generation",
+        "color_space",
+        "dtype"
+      ],
+      "type": "object"
+    },
+    "endpoint_policy": {
+      "required": [
+        "primary_endpoint",
+        "columns",
+        "forbid_primary_scalar_attack_score",
+        "regime_labels",
+        "row_rule"
+      ],
+      "type": "object"
+    },
+    "execution_tiers": {
+      "minProperties": 3,
+      "type": "object"
+    },
+    "extended_controls": {
+      "const": [
+        "B21_public_fresh_pad",
+        "B22_public_wideblock_prp",
+        "B23_secure_fixed_header",
+        "B24_aes_gcm_siv"
+      ]
+    },
+    "leakage": {
+      "type": "object"
+    },
+    "master_key_hex": {
+      "pattern": "^[0-9a-fA-F]{64}$",
+      "type": "string"
+    },
+    "master_seed": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "methods": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 24,
+      "minItems": 24,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "object_model": {
+      "required": [
+        "metadata_profile",
+        "evaluation_identifiers_in_object",
+        "external_log_fields",
+        "complete_public_view"
+      ],
+      "type": "object"
+    },
+    "outputs": {
+      "required": [
+        "corpus_root",
+        "manifest",
+        "write_control_objects"
+      ],
+      "type": "object"
+    },
+    "perturbations": {
+      "required": [
+        "primary",
+        "secondary",
+        "update_rule",
+        "gradient_tie_break"
+      ],
+      "type": "object"
+    },
+    "protocol_id": {
+      "const": "QSA-PROTOCOL-V1"
+    },
+    "protocols": {
+      "required": [
+        "P1_common_context",
+        "P2_fresh_randomness"
+      ],
+      "type": "object"
+    },
+    "replication_policy": {
+      "additionalProperties": false,
+      "properties": {
+        "all_method_objects_regenerated": {
+          "const": true
+        },
+        "deterministic_outputs_must_hash_match": {
+          "const": true
+        },
+        "independent_output_root": {
+          "type": "string"
+        },
+        "independent_runs": {
+          "minimum": 2,
+          "type": "integer"
+        },
+        "primary_output_root": {
+          "type": "string"
+        },
+        "timing_outputs_excluded_from_hash_equality": {
+          "const": true
+        }
+      },
+      "required": [
+        "independent_runs",
+        "deterministic_outputs_must_hash_match",
+        "timing_outputs_excluded_from_hash_equality",
+        "all_method_objects_regenerated",
+        "primary_output_root",
+        "independent_output_root"
+      ],
+      "type": "object"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "statistics": {
+      "type": "object"
+    },
+    "timing": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "protocol_id",
+    "schema_version",
+    "benchmark_profile",
+    "master_seed",
+    "master_key_hex",
+    "object_model",
+    "methods",
+    "extended_controls",
+    "corpus",
+    "protocols",
+    "perturbations",
+    "execution_tiers",
+    "statistics",
+    "endpoint_policy",
+    "leakage",
+    "timing",
+    "replication_policy",
+    "outputs"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,127 @@
+{
+  "$id": "urn:qsa:primitive-scaling:v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "body_representations": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "bytes_per_coordinate": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "bytes_per_coordinate"
+        ],
+        "type": "object"
+      },
+      "maxItems": 2,
+      "minItems": 2,
+      "type": "array"
+    },
+    "expected_counts": {
+      "additionalProperties": false,
+      "properties": {
+        "round_trip_cases_across_two_executions": {
+          "const": 96
+        },
+        "round_trip_cases_per_execution": {
+          "const": 48
+        },
+        "timing_aggregate_rows_per_execution": {
+          "const": 48
+        },
+        "timing_records_per_execution": {
+          "const": 1440
+        }
+      },
+      "required": [
+        "round_trip_cases_per_execution",
+        "round_trip_cases_across_two_executions",
+        "timing_records_per_execution",
+        "timing_aggregate_rows_per_execution"
+      ],
+      "type": "object"
+    },
+    "image_ids": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "maxItems": 4,
+      "minItems": 4,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "master_key_hex": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "master_seed": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "primitives": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "implementation": {
+            "type": "string"
+          },
+          "nonce_bytes": {
+            "minimum": 1,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "id",
+          "nonce_bytes",
+          "implementation"
+        ],
+        "type": "object"
+      },
+      "maxItems": 2,
+      "minItems": 2,
+      "type": "array"
+    },
+    "protocol_id": {
+      "const": "QSA-PRIMITIVE-SCALING-V1"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "sizes": {
+      "const": [
+        96,
+        256,
+        512
+      ]
+    },
+    "timing_repetitions": {
+      "minimum": 1,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "protocol_id",
+    "schema_version",
+    "master_key_hex",
+    "master_seed",
+    "image_ids",
+    "sizes",
+    "body_representations",
+    "primitives",
+    "timing_repetitions",
+    "expected_counts"
+  ],
+  "type": "object"
+}

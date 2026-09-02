@@ -1,0 +1,42 @@
+benchmark_id: QSA-SMOKE-V1
+master_seed: 20260804
+master_key_hex: 00112233445566778899aabbccddeeff102132435465768798a9bacbdcedfe0f
+methods:
+- B01_aes_gcm
+- B02_chacha20_poly1305
+- B03_shake_hmac
+- B04_public_high_entropy
+- B05_identity
+- B06_reversible_color
+- B07_pca_klt
+- B08_random_so3
+- B09_fixed_axis_quaternion
+- B10_caseii
+- B11_curvature_caseii
+- B12_chebyshev_only
+- B13_permutation_only
+- B14_diffusion_only
+- B15_geometry_shake_hmac
+- B16_geometry_aes_gcm
+- B17_tip_r0_emulation
+- B18_external_quaternion_feistel
+- B19_external_chaos_pd
+- B20_full_aead_explicit_preview
+dataset:
+  image_size:
+  - 32
+  - 32
+  splits:
+  - development
+  corpora:
+  - synthetic
+  max_records_per_corpus: 2
+execution:
+  repetitions: 1
+  tamper_probe: true
+  measure_systems: true
+  strict_expected_ordering: true
+outputs:
+  root: results/benchmark/smoke
+  write_objects: false
+  write_reconstructions: false

@@ -1,0 +1,55 @@
+{
+  "$id": "urn:qsa:repository-verification:v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "default_environment_policy": {
+      "enum": [
+        "exact",
+        "packages",
+        "report"
+      ]
+    },
+    "default_output_root": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "expected_counts": {
+      "additionalProperties": {
+        "minimum": 0,
+        "type": "integer"
+      },
+      "type": "object"
+    },
+    "paths": {
+      "additionalProperties": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "object"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "timing_limits": {
+      "additionalProperties": {
+        "minimum": 0,
+        "type": "number"
+      },
+      "type": "object"
+    },
+    "verification_id": {
+      "const": "QSA-REPOSITORY-VERIFICATION-V1"
+    }
+  },
+  "required": [
+    "verification_id",
+    "schema_version",
+    "default_output_root",
+    "default_environment_policy",
+    "expected_counts",
+    "paths",
+    "timing_limits"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,1525 @@
+{
+  "authenticated_case_count": 9,
+  "case_count": 24,
+  "case_order_sha256": "66166ab6908bb4f61e1f3a001fc27d23f3e3f4114aed383cffbd7c08963bff40",
+  "cases": [
+    {
+      "authenticated": true,
+      "context": {
+        "canonical_sha256": "22dcaa95027ca9c9d21653c36c25434c5f8bcdf758eb2952d7a56df7a98d68b6",
+        "image_id": "known_answer_input_16x16",
+        "master_key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "nonce_hex": "d1ed6c844f0ebb628f55ed3e",
+        "protocol_id": "QSA-KNOWN-ANSWER-V1",
+        "public_material_hex": "",
+        "public_metadata": {
+          "benchmark": "QSA-KNOWN-ANSWER-V1",
+          "metadata_profile": "fixed-reference-v1",
+          "object_semantics": "complete-public-object",
+          "schema": 1
+        },
+        "run_id": "known-answer|B01_aes_gcm",
+        "seed": 842117395529163226
+      },
+      "header_consistency": {
+        "image_shape": [
+          16,
+          16,
+          3
+        ],
+        "method_id": "B01_aes_gcm",
+        "nonce_length": 12,
+        "protected_length": 768,
+        "public_length": 0,
+        "tag_length": 16
+      },
+      "input_sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+      "lengths": {
+        "ciphertext_view": 768,
+        "header": 335,
+        "nonce": 12,
+        "object": 1140,
+        "protected_payload": 768,
+        "public_payload": 0,
+        "tag": 16
+      },
+      "method_id": "B01_aes_gcm",
+      "object_path": "reference/known_answers/objects/B01_aes_gcm.qsb",
+      "ordinal": 1,
+      "sha256": {
+        "ciphertext_view": "1ed76ef18717dd505d36e391a2b565f593935d107ff2f5de3d79d0942ac853e7",
+        "descriptor": "de9c469d12b5b58f309717f8d40f6622b7764bfb68606a29d67e2f5f810a260f",
+        "header": "8e8b7dc8c64c09e1f95e03d3dcc2287ae02917e655a851c679cc856942ee7f66",
+        "metadata": "44f2e7f881b3c2ea201a30b271077e0da9b8cab65dd97a3818e9d5004918b0aa",
+        "nonce": "a943ee2ed5b288bf93cce9a14d48a7462db291c7b9b9191fb3333d1763f56717",
+        "object": "652c862b2ea9ec6b77849f9da794e6a2dc08bd7d23e8415d7723af402c1c81df",
+        "protected_payload": "1ed76ef18717dd505d36e391a2b565f593935d107ff2f5de3d79d0942ac853e7",
+        "public_payload": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "recovered_image": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+        "tag": "5a30e72786bd3f7113f25189811c740dcd8cdb2a6496bee5f2cf60564d2b78d0"
+      }
+    },
+    {
+      "authenticated": true,
+      "context": {
+        "canonical_sha256": "b59017836ac7df8f23f7ab56201af3416873ebec7a344c6c87f06c58a4b835eb",
+        "image_id": "known_answer_input_16x16",
+        "master_key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "nonce_hex": "c8c7ab59287d14298c87052d",
+        "protocol_id": "QSA-KNOWN-ANSWER-V1",
+        "public_material_hex": "",
+        "public_metadata": {
+          "benchmark": "QSA-KNOWN-ANSWER-V1",
+          "metadata_profile": "fixed-reference-v1",
+          "object_semantics": "complete-public-object",
+          "schema": 1
+        },
+        "run_id": "known-answer|B02_chacha20_poly1305",
+        "seed": 16187968738206413253
+      },
+      "header_consistency": {
+        "image_shape": [
+          16,
+          16,
+          3
+        ],
+        "method_id": "B02_chacha20_poly1305",
+        "nonce_length": 12,
+        "protected_length": 768,
+        "public_length": 0,
+        "tag_length": 16
+      },
+      "input_sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+      "lengths": {
+        "ciphertext_view": 768,
+        "header": 351,
+        "nonce": 12,
+        "object": 1156,
+        "protected_payload": 768,
+        "public_payload": 0,
+        "tag": 16
+      },
+      "method_id": "B02_chacha20_poly1305",
+      "object_path": "reference/known_answers/objects/B02_chacha20_poly1305.qsb",
+      "ordinal": 2,
+      "sha256": {
+        "ciphertext_view": "43534df0367b3e16ee8d89bdf54ddeb6cf5f3be4c683cf8fc5d75887ce5ffde0",
+        "descriptor": "3beacab7eb31519af072ba42601f02769975fb1a7173190187a359f7e9055297",
+        "header": "5609001e8867e3a080948a5360e4e1df344479ab21c185935e5e06fe1d4c5bbe",
+        "metadata": "44f2e7f881b3c2ea201a30b271077e0da9b8cab65dd97a3818e9d5004918b0aa",
+        "nonce": "c8d620c3112b9f42c3ac99d0f9f0a8d00298ad50a915822abdc1ba763ec31f20",
+        "object": "bb2f9be4e315d1910137d56e45d1e25adb00988609b761e7a7be9eec46e3d849",
+        "protected_payload": "43534df0367b3e16ee8d89bdf54ddeb6cf5f3be4c683cf8fc5d75887ce5ffde0",
+        "public_payload": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "recovered_image": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+        "tag": "9c6f67c5a4c140f703417f24cb0966908369efb89afad3452d597d6548edd95a"
+      }
+    },
+    {
+      "authenticated": true,
+      "context": {
+        "canonical_sha256": "ac57eb7741931af61ff4fae4fad3eb7e58e0f7b3b44195d47de7571ee97e1148",
+        "image_id": "known_answer_input_16x16",
+        "master_key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "nonce_hex": "bd63ddda629e18dcaa67031487f7e775",
+        "protocol_id": "QSA-KNOWN-ANSWER-V1",
+        "public_material_hex": "",
+        "public_metadata": {
+          "benchmark": "QSA-KNOWN-ANSWER-V1",
+          "metadata_profile": "fixed-reference-v1",
+          "object_semantics": "complete-public-object",
+          "schema": 1
+        },
+        "run_id": "known-answer|B03_shake_hmac",
+        "seed": 12808636647498442976
+      },
+      "header_consistency": {
+        "image_shape": [
+          16,
+          16,
+          3
+        ],
+        "method_id": "B03_shake_hmac",
+        "nonce_length": 16,
+        "protected_length": 768,
+        "public_length": 0,
+        "tag_length": 32
+      },
+      "input_sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+      "lengths": {
+        "ciphertext_view": 768,
+        "header": 347,
+        "nonce": 16,
+        "object": 1172,
+        "protected_payload": 768,
+        "public_payload": 0,
+        "tag": 32
+      },
+      "method_id": "B03_shake_hmac",
+      "object_path": "reference/known_answers/objects/B03_shake_hmac.qsb",
+      "ordinal": 3,
+      "sha256": {
+        "ciphertext_view": "21de90fc040a8c39c38fd4eeddaef3ad0ad89a01ccf584b755e1d5fd94761bc3",
+        "descriptor": "2adfd39f97ce4e1ca3e3895143ffd77cd678acc86b8c057d57dc2fb2a8d7b605",
+        "header": "dd33bba8d8dade295630a0ed9fb3418c85bc2b025aec3e8c9210e54cc7578814",
+        "metadata": "44f2e7f881b3c2ea201a30b271077e0da9b8cab65dd97a3818e9d5004918b0aa",
+        "nonce": "b437f1ebac93489cc277531d19597a0b460e12c28f7f99f02b1c2b1addc2bb3c",
+        "object": "5649f4808aaee164d823e311371a193384bdab8e224f2cb027bf9f70c8c26e6d",
+        "protected_payload": "21de90fc040a8c39c38fd4eeddaef3ad0ad89a01ccf584b755e1d5fd94761bc3",
+        "public_payload": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "recovered_image": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+        "tag": "cca59db69de37d02df60f1cec016debd04b462051f676d14a61cece74201ca8f"
+      }
+    },
+    {
+      "authenticated": false,
+      "context": {
+        "canonical_sha256": "526095f63f21bec9cd0967f4a1aeefa025a18cf0547d0b00ee57f27bf1262f22",
+        "image_id": "known_answer_input_16x16",
+        "master_key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "nonce_hex": "a6cecb265b4891a85682894e",
+        "protocol_id": "QSA-KNOWN-ANSWER-V1",
+        "public_material_hex": "",
+        "public_metadata": {
+          "benchmark": "QSA-KNOWN-ANSWER-V1",
+          "metadata_profile": "fixed-reference-v1",
+          "object_semantics": "complete-public-object",
+          "schema": 1
+        },
+        "run_id": "known-answer|B04_public_high_entropy",
+        "seed": 18128186227420746093
+      },
+      "header_consistency": {
+        "image_shape": [
+          16,
+          16,
+          3
+        ],
+        "method_id": "B04_public_high_entropy",
+        "nonce_length": 12,
+        "protected_length": 768,
+        "public_length": 0,
+        "tag_length": 0
+      },
+      "input_sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+      "lengths": {
+        "ciphertext_view": 768,
+        "header": 405,
+        "nonce": 12,
+        "object": 1194,
+        "protected_payload": 768,
+        "public_payload": 0,
+        "tag": 0
+      },
+      "method_id": "B04_public_high_entropy",
+      "object_path": "reference/known_answers/objects/B04_public_high_entropy.qsb",
+      "ordinal": 4,
+      "sha256": {
+        "ciphertext_view": "2763bc40c5abc852b3e0729eaae135a63a0f146e2e14a5d7fda15cd5b840bfc8",
+        "descriptor": "dabc92d9a6eed8fddb2e08ddae93c3a765c3e1099aaf5c1e5d062000a6645302",
+        "header": "60cff2b8387fb6ad5e16fe30048a0a9712e9aee6e013253a0e546ba034caa916",
+        "metadata": "44f2e7f881b3c2ea201a30b271077e0da9b8cab65dd97a3818e9d5004918b0aa",
+        "nonce": "c309db335fc98acd7a0a489b04a1b560d546c2fc96852ef7af2c8619295fcc60",
+        "object": "064fb78cd170a606b1c3bcd44c2190f66ddf5a88dc62ba3e722dbd99ef8ff44a",
+        "protected_payload": "2763bc40c5abc852b3e0729eaae135a63a0f146e2e14a5d7fda15cd5b840bfc8",
+        "public_payload": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "recovered_image": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+        "tag": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "authenticated": false,
+      "context": {
+        "canonical_sha256": "1bdedac2505b9162a3a524a08ef7137cb6a328f787cefa2b6a713ce52b4a4eb5",
+        "image_id": "known_answer_input_16x16",
+        "master_key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "nonce_hex": "6dfd21d805c0873b245d539a",
+        "protocol_id": "QSA-KNOWN-ANSWER-V1",
+        "public_material_hex": "",
+        "public_metadata": {
+          "benchmark": "QSA-KNOWN-ANSWER-V1",
+          "metadata_profile": "fixed-reference-v1",
+          "object_semantics": "complete-public-object",
+          "schema": 1
+        },
+        "run_id": "known-answer|B05_identity",
+        "seed": 6406218081920981051
+      },
+      "header_consistency": {
+        "image_shape": [
+          16,
+          16,
+          3
+        ],
+        "method_id": "B05_identity",
+        "nonce_length": 12,
+        "protected_length": 0,
+        "public_length": 3072,
+        "tag_length": 0
+      },
+      "input_sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+      "lengths": {
+        "ciphertext_view": 3072,
+        "header": 392,
+        "nonce": 12,
+        "object": 3485,
+        "protected_payload": 0,
+        "public_payload": 3072,
+        "tag": 0
+      },
+      "method_id": "B05_identity",
+      "object_path": "reference/known_answers/objects/B05_identity.qsb",
+      "ordinal": 5,
+      "sha256": {
+        "ciphertext_view": "6ec34f86f452458326413daa97531fdf9471b99f86cd7b1d0d4fee91f31ec190",
+        "descriptor": "7b353a17f1269efd9b62b557bbdf038a16740cadb06ddba8ab2d05e866942f5e",
+        "header": "47fd4b0a58e40dc709f4f51f51f9b413f51c92f5f275f471093c7e061367a740",
+        "metadata": "44f2e7f881b3c2ea201a30b271077e0da9b8cab65dd97a3818e9d5004918b0aa",
+        "nonce": "eb4b6e1210b6c99154f259da83962de62a071898c11299038fc07e1da8804242",
+        "object": "07610e4f942d0c325b2a3e629e9545fa12e672aa82626be4c5e9d1c059b76c45",
+        "protected_payload": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "public_payload": "6ec34f86f452458326413daa97531fdf9471b99f86cd7b1d0d4fee91f31ec190",
+        "recovered_image": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+        "tag": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "authenticated": false,
+      "context": {
+        "canonical_sha256": "0aed82efbc7c2f6935103419ada73085fe6fffe76a4b2b98958f6f2d1ebecb61",
+        "image_id": "known_answer_input_16x16",
+        "master_key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "nonce_hex": "d8438da08013cf1ce591c912",
+        "protocol_id": "QSA-KNOWN-ANSWER-V1",
+        "public_material_hex": "",
+        "public_metadata": {
+          "benchmark": "QSA-KNOWN-ANSWER-V1",
+          "metadata_profile": "fixed-reference-v1",
+          "object_semantics": "complete-public-object",
+          "schema": 1
+        },
+        "run_id": "known-answer|B06_reversible_color",
+        "seed": 3358092003581443099
+      },
+      "header_consistency": {
+        "image_shape": [
+          16,
+          16,
+          3
+        ],
+        "method_id": "B06_reversible_color",
+        "nonce_length": 12,
+        "protected_length": 0,
+        "public_length": 3072,
+        "tag_length": 0
+      },
+      "input_sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+      "lengths": {
+        "ciphertext_view": 3072,
+        "header": 395,
+        "nonce": 12,
+        "object": 3488,
+        "protected_payload": 0,
+        "public_payload": 3072,
+        "tag": 0
+      },
+      "method_id": "B06_reversible_color",
+      "object_path": "reference/known_answers/objects/B06_reversible_color.qsb",
+      "ordinal": 6,
+      "sha256": {
+        "ciphertext_view": "74dc23eed2b6b7946a8971b123b5f24f3cff1ddf791993f02d301e90dbf8c3f6",
+        "descriptor": "eccc523234860f5518d127dffbbeb41aecf0e29b4dae0250ac50e1b9f013001a",
+        "header": "ed2744392bbf1396d53ede9d241253b4953ccf284146c013aba0c745efe62ea1",
+        "metadata": "44f2e7f881b3c2ea201a30b271077e0da9b8cab65dd97a3818e9d5004918b0aa",
+        "nonce": "a53a8625e20c753e3e8e24ff4459cdfc104b214dbbcb110f5895e584005b1a5c",
+        "object": "81a04e923bb4d954897ecf277cede4a8c4224fce8c92ebeddb2f266188fe905e",
+        "protected_payload": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "public_payload": "74dc23eed2b6b7946a8971b123b5f24f3cff1ddf791993f02d301e90dbf8c3f6",
+        "recovered_image": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+        "tag": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "authenticated": false,
+      "context": {
+        "canonical_sha256": "ae60388c8eadc4d3c93e0d7f2533a1d047a92bb53b41a63136051c090a2a18cf",
+        "image_id": "known_answer_input_16x16",
+        "master_key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "nonce_hex": "ca487ba9241d39f73540afac",
+        "protocol_id": "QSA-KNOWN-ANSWER-V1",
+        "public_material_hex": "",
+        "public_metadata": {
+          "benchmark": "QSA-KNOWN-ANSWER-V1",
+          "metadata_profile": "fixed-reference-v1",
+          "object_semantics": "complete-public-object",
+          "schema": 1
+        },
+        "run_id": "known-answer|B07_pca_klt",
+        "seed": 14962923119051402555
+      },
+      "header_consistency": {
+        "image_shape": [
+          16,
+          16,
+          3
+        ],
+        "method_id": "B07_pca_klt",
+        "nonce_length": 12,
+        "protected_length": 0,
+        "public_length": 3072,
+        "tag_length": 0
+      },
+      "input_sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+      "lengths": {
+        "ciphertext_view": 3072,
+        "header": 504,
+        "nonce": 12,
+        "object": 3597,
+        "protected_payload": 0,
+        "public_payload": 3072,
+        "tag": 0
+      },
+      "method_id": "B07_pca_klt",
+      "object_path": "reference/known_answers/objects/B07_pca_klt.qsb",
+      "ordinal": 7,
+      "sha256": {
+        "ciphertext_view": "a840ff52a2c613ad512b5f6d1353d3b99ff8290e46a694ec5832bf20f070eecb",
+        "descriptor": "d11f5676c7e202699f5ec9d6dc8b86bc0b465e35f252389b0c6504af0fef19e1",
+        "header": "d8d14d5623bf60ef4837c05218a62c5763c1a85e59a25ec66de01de904c31c54",
+        "metadata": "44f2e7f881b3c2ea201a30b271077e0da9b8cab65dd97a3818e9d5004918b0aa",
+        "nonce": "d4df5ff5340a1dbcbf7e84b9e6c38d43d60f83a7c520c2551ba0d279133591a5",
+        "object": "76ce384a76a80dfb318f065f06b9ef42c1eb790a9f55e35f4e38a39358922a0c",
+        "protected_payload": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "public_payload": "a840ff52a2c613ad512b5f6d1353d3b99ff8290e46a694ec5832bf20f070eecb",
+        "recovered_image": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+        "tag": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "authenticated": false,
+      "context": {
+        "canonical_sha256": "f439a5e06b1dfb55ef73f4bd05e31ca6465e9030b3ca41827616442062231f7b",
+        "image_id": "known_answer_input_16x16",
+        "master_key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "nonce_hex": "657c6b8dc69cafd84f7a1120",
+        "protocol_id": "QSA-KNOWN-ANSWER-V1",
+        "public_material_hex": "",
+        "public_metadata": {
+          "benchmark": "QSA-KNOWN-ANSWER-V1",
+          "metadata_profile": "fixed-reference-v1",
+          "object_semantics": "complete-public-object",
+          "schema": 1
+        },
+        "run_id": "known-answer|B08_random_so3",
+        "seed": 5496144095466718723
+      },
+      "header_consistency": {
+        "image_shape": [
+          16,
+          16,
+          3
+        ],
+        "method_id": "B08_random_so3",
+        "nonce_length": 12,
+        "protected_length": 0,
+        "public_length": 3072,
+        "tag_length": 0
+      },
+      "input_sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+      "lengths": {
+        "ciphertext_view": 3072,
+        "header": 623,
+        "nonce": 12,
+        "object": 3716,
+        "protected_payload": 0,
+        "public_payload": 3072,
+        "tag": 0
+      },
+      "method_id": "B08_random_so3",
+      "object_path": "reference/known_answers/objects/B08_random_so3.qsb",
+      "ordinal": 8,
+      "sha256": {
+        "ciphertext_view": "0f1bf0718ec9db0321f39131c4539e92982bd46de57dba3be1a454982fcaf7bd",
+        "descriptor": "60ce0837c3e0b0cba86d30ac5758b35a1d28b59fd717e078be6cb8fd26cce9ab",
+        "header": "b5af747b1ed68e60a00242830e66510eb9018a3cfc2bcacadce3cce25a82581a",
+        "metadata": "44f2e7f881b3c2ea201a30b271077e0da9b8cab65dd97a3818e9d5004918b0aa",
+        "nonce": "9e4390f83e7a8753021914b72439dab1ceef70f8b7efcff602e8f66e4255875c",
+        "object": "edf27e5f7f0a5bac6f59b7c19febde8664b0ea02f0e76f4244cb45f9b7f442db",
+        "protected_payload": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "public_payload": "0f1bf0718ec9db0321f39131c4539e92982bd46de57dba3be1a454982fcaf7bd",
+        "recovered_image": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+        "tag": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "authenticated": false,
+      "context": {
+        "canonical_sha256": "4252350f8396dc5b7aeff0361ed33c972be30bcc6e15be39e9712b4cdcb7a9ab",
+        "image_id": "known_answer_input_16x16",
+        "master_key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "nonce_hex": "cb3e424d1e8f413e1e43437f",
+        "protocol_id": "QSA-KNOWN-ANSWER-V1",
+        "public_material_hex": "",
+        "public_metadata": {
+          "benchmark": "QSA-KNOWN-ANSWER-V1",
+          "metadata_profile": "fixed-reference-v1",
+          "object_semantics": "complete-public-object",
+          "schema": 1
+        },
+        "run_id": "known-answer|B09_fixed_axis_quaternion",
+        "seed": 2522100661401307524
+      },
+      "header_consistency": {
+        "image_shape": [
+          16,
+          16,
+          3
+        ],
+        "method_id": "B09_fixed_axis_quaternion",
+        "nonce_length": 12,
+        "protected_length": 0,
+        "public_length": 3072,
+        "tag_length": 0
+      },
+      "input_sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+      "lengths": {
+        "ciphertext_view": 3072,
+        "header": 534,
+        "nonce": 12,
+        "object": 3627,
+        "protected_payload": 0,
+        "public_payload": 3072,
+        "tag": 0
+      },
+      "method_id": "B09_fixed_axis_quaternion",
+      "object_path": "reference/known_answers/objects/B09_fixed_axis_quaternion.qsb",
+      "ordinal": 9,
+      "sha256": {
+        "ciphertext_view": "7c19e2945be6d896aa5e3d4a5acc5d1fd2be63fe38f79fc2fd0ce2bbab0b7b8b",
+        "descriptor": "b47a1dfdc19fda76a9d8d402273d6e2bd1a199267fe8fbc48af9112fcc195d97",
+        "header": "a881ef9ece9fbbc99a6e88e833ecfae3204d0c62a24b569829ee1e6f02c7fdd9",
+        "metadata": "44f2e7f881b3c2ea201a30b271077e0da9b8cab65dd97a3818e9d5004918b0aa",
+        "nonce": "0a1fc99a6af12f677c453e68e5d3ca14fa322a821906a8e17e021a5b251a75bd",
+        "object": "bcb467b21880e5172c2afbbef1587ac540193fc99c45b90c7af7618ae045ea8a",
+        "protected_payload": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "public_payload": "7c19e2945be6d896aa5e3d4a5acc5d1fd2be63fe38f79fc2fd0ce2bbab0b7b8b",
+        "recovered_image": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+        "tag": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "authenticated": false,
+      "context": {
+        "canonical_sha256": "d97ea899cc13a69149965188bcf97faabaeb6969ad7235754b78e6923d1a622b",
+        "image_id": "known_answer_input_16x16",
+        "master_key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "nonce_hex": "95b240006a0b43820c8c2a17",
+        "protocol_id": "QSA-KNOWN-ANSWER-V1",
+        "public_material_hex": "",
+        "public_metadata": {
+          "benchmark": "QSA-KNOWN-ANSWER-V1",
+          "metadata_profile": "fixed-reference-v1",
+          "object_semantics": "complete-public-object",
+          "schema": 1
+        },
+        "run_id": "known-answer|B10_caseii",
+        "seed": 4159186722664926442
+      },
+      "header_consistency": {
+        "image_shape": [
+          16,
+          16,
+          3
+        ],
+        "method_id": "B10_caseii",
+        "nonce_length": 12,
+        "protected_length": 0,
+        "public_length": 3072,
+        "tag_length": 0
+      },
+      "input_sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+      "lengths": {
+        "ciphertext_view": 3072,
+        "header": 1410,
+        "nonce": 12,
+        "object": 4503,
+        "protected_payload": 0,
+        "public_payload": 3072,
+        "tag": 0
+      },
+      "method_id": "B10_caseii",
+      "object_path": "reference/known_answers/objects/B10_caseii.qsb",
+      "ordinal": 10,
+      "sha256": {
+        "ciphertext_view": "3236f8f295c5af6aa3200551825c54847d6d2ea900907bb2f34053d9e9938099",
+        "descriptor": "f6d412631e3216ed26c9eff8a1fa4b3b72f6cc5728a04a796e4abcc9cb046b8c",
+        "header": "763d275f402e4a6699a24f66f9681d29ba494ec661f428bf0545b9e32c27b10b",
+        "metadata": "44f2e7f881b3c2ea201a30b271077e0da9b8cab65dd97a3818e9d5004918b0aa",
+        "nonce": "b752ddce579169fd399eb32b042001968c6f6ce56f0c926ed297463f965d1e1e",
+        "object": "1bb274a6ca2a1b4c45b4d30921bac26507b4e5ba362ac9f94af1ab4e7f502d27",
+        "protected_payload": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "public_payload": "3236f8f295c5af6aa3200551825c54847d6d2ea900907bb2f34053d9e9938099",
+        "recovered_image": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+        "tag": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "authenticated": false,
+      "context": {
+        "canonical_sha256": "c94765004d83e741d64acfa1ac0afee7a0e74e309d0c3cd06da2c808aa4ee7ff",
+        "image_id": "known_answer_input_16x16",
+        "master_key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "nonce_hex": "82a76593bf85442df290c71e",
+        "protocol_id": "QSA-KNOWN-ANSWER-V1",
+        "public_material_hex": "",
+        "public_metadata": {
+          "benchmark": "QSA-KNOWN-ANSWER-V1",
+          "metadata_profile": "fixed-reference-v1",
+          "object_semantics": "complete-public-object",
+          "schema": 1
+        },
+        "run_id": "known-answer|B11_curvature_caseii",
+        "seed": 4932542967590171817
+      },
+      "header_consistency": {
+        "image_shape": [
+          16,
+          16,
+          3
+        ],
+        "method_id": "B11_curvature_caseii",
+        "nonce_length": 12,
+        "protected_length": 0,
+        "public_length": 3072,
+        "tag_length": 0
+      },
+      "input_sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+      "lengths": {
+        "ciphertext_view": 3072,
+        "header": 1609,
+        "nonce": 12,
+        "object": 4702,
+        "protected_payload": 0,
+        "public_payload": 3072,
+        "tag": 0
+      },
+      "method_id": "B11_curvature_caseii",
+      "object_path": "reference/known_answers/objects/B11_curvature_caseii.qsb",
+      "ordinal": 11,
+      "sha256": {
+        "ciphertext_view": "1298a74af0fd4c1d6d67e8b3dc9123a6b825fb1b65c007f90ff7545a51009af3",
+        "descriptor": "d0fe9c6ba32b47efa297719faf985f705c88fa140720751f05adc492601e3207",
+        "header": "3aa959000ff0320e50dba531ba96f3e3e79a2ef6395abaded66f423aeaa9e539",
+        "metadata": "44f2e7f881b3c2ea201a30b271077e0da9b8cab65dd97a3818e9d5004918b0aa",
+        "nonce": "04a3c714b529db1405f28e8bb2871a4d8a9c5c797a7d3e01bd11d12d90b222bb",
+        "object": "8860c55301e4b1baa26c742158851b36f5b64edc4e23dab25844c4d86393174c",
+        "protected_payload": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "public_payload": "1298a74af0fd4c1d6d67e8b3dc9123a6b825fb1b65c007f90ff7545a51009af3",
+        "recovered_image": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+        "tag": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "authenticated": false,
+      "context": {
+        "canonical_sha256": "1917e5ad064769e86eca3ebc4e60a217a39523a398c4d7d26baf6ffc4c4c194b",
+        "image_id": "known_answer_input_16x16",
+        "master_key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "nonce_hex": "39f6a1408b2cf2782a79ea0d",
+        "protocol_id": "QSA-KNOWN-ANSWER-V1",
+        "public_material_hex": "",
+        "public_metadata": {
+          "benchmark": "QSA-KNOWN-ANSWER-V1",
+          "metadata_profile": "fixed-reference-v1",
+          "object_semantics": "complete-public-object",
+          "schema": 1
+        },
+        "run_id": "known-answer|B12_chebyshev_only",
+        "seed": 3148788784581114014
+      },
+      "header_consistency": {
+        "image_shape": [
+          16,
+          16,
+          3
+        ],
+        "method_id": "B12_chebyshev_only",
+        "nonce_length": 12,
+        "protected_length": 768,
+        "public_length": 0,
+        "tag_length": 0
+      },
+      "input_sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+      "lengths": {
+        "ciphertext_view": 768,
+        "header": 321,
+        "nonce": 12,
+        "object": 1110,
+        "protected_payload": 768,
+        "public_payload": 0,
+        "tag": 0
+      },
+      "method_id": "B12_chebyshev_only",
+      "object_path": "reference/known_answers/objects/B12_chebyshev_only.qsb",
+      "ordinal": 12,
+      "sha256": {
+        "ciphertext_view": "e7e0489af80b9a32335bcbdbea63e36d00d983a47ad0e13737dfb73b5fbc9f7f",
+        "descriptor": "3da206a27de6634eba87337296ffa272fae1afe210c9fec5ae2558683c3a3a09",
+        "header": "c47734940245064c1c37d608965c34defce343db558aa679045c3292ca4ee622",
+        "metadata": "44f2e7f881b3c2ea201a30b271077e0da9b8cab65dd97a3818e9d5004918b0aa",
+        "nonce": "9db9a73efeff0e3730ca8c2f8c2405efd3319851233d4e5eb1772fd5d1c7d397",
+        "object": "3591528f22dc2b018d68f26c2293e4ab03fca5f92ca7af02e0bfdf822522cc71",
+        "protected_payload": "e7e0489af80b9a32335bcbdbea63e36d00d983a47ad0e13737dfb73b5fbc9f7f",
+        "public_payload": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "recovered_image": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+        "tag": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "authenticated": false,
+      "context": {
+        "canonical_sha256": "71e5d555a6d7b695681639252bfdbe81f95d225d11da123138722c3d16825cb5",
+        "image_id": "known_answer_input_16x16",
+        "master_key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "nonce_hex": "a6c92000f64f24eebabd2300",
+        "protocol_id": "QSA-KNOWN-ANSWER-V1",
+        "public_material_hex": "",
+        "public_metadata": {
+          "benchmark": "QSA-KNOWN-ANSWER-V1",
+          "metadata_profile": "fixed-reference-v1",
+          "object_semantics": "complete-public-object",
+          "schema": 1
+        },
+        "run_id": "known-answer|B13_permutation_only",
+        "seed": 11797255195494881035
+      },
+      "header_consistency": {
+        "image_shape": [
+          16,
+          16,
+          3
+        ],
+        "method_id": "B13_permutation_only",
+        "nonce_length": 12,
+        "protected_length": 768,
+        "public_length": 0,
+        "tag_length": 0
+      },
+      "input_sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+      "lengths": {
+        "ciphertext_view": 768,
+        "header": 325,
+        "nonce": 12,
+        "object": 1114,
+        "protected_payload": 768,
+        "public_payload": 0,
+        "tag": 0
+      },
+      "method_id": "B13_permutation_only",
+      "object_path": "reference/known_answers/objects/B13_permutation_only.qsb",
+      "ordinal": 13,
+      "sha256": {
+        "ciphertext_view": "f1725051e3fc275fbb0cd503bd5e651aa92d19ce6ef151c4fd38d081d953976d",
+        "descriptor": "3aed62004a2cb415d70eee5e1c319480b2f825982bcd648acc0832820e8a97cb",
+        "header": "04af39f0e1cfb261e35e12f4eaeaf5a2b0e2972ba03c853e62a061c4411a3264",
+        "metadata": "44f2e7f881b3c2ea201a30b271077e0da9b8cab65dd97a3818e9d5004918b0aa",
+        "nonce": "8b149a245f035942d27a2068846307e17b25dc3504953e9c244c1d3b5df2b1d4",
+        "object": "3b740f6ca258d5da44bb6384eea83441411d14bbbfe825e867d7df950afa45f1",
+        "protected_payload": "f1725051e3fc275fbb0cd503bd5e651aa92d19ce6ef151c4fd38d081d953976d",
+        "public_payload": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "recovered_image": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+        "tag": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "authenticated": false,
+      "context": {
+        "canonical_sha256": "5d6ceb17cc13920a612b0c8e754cfbca99b69e18f41d6d01d755b64a0c42609f",
+        "image_id": "known_answer_input_16x16",
+        "master_key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "nonce_hex": "4d0eed9c7edc3c0372dd00b0",
+        "protocol_id": "QSA-KNOWN-ANSWER-V1",
+        "public_material_hex": "",
+        "public_metadata": {
+          "benchmark": "QSA-KNOWN-ANSWER-V1",
+          "metadata_profile": "fixed-reference-v1",
+          "object_semantics": "complete-public-object",
+          "schema": 1
+        },
+        "run_id": "known-answer|B14_diffusion_only",
+        "seed": 6987865331012278308
+      },
+      "header_consistency": {
+        "image_shape": [
+          16,
+          16,
+          3
+        ],
+        "method_id": "B14_diffusion_only",
+        "nonce_length": 12,
+        "protected_length": 768,
+        "public_length": 0,
+        "tag_length": 0
+      },
+      "input_sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+      "lengths": {
+        "ciphertext_view": 768,
+        "header": 321,
+        "nonce": 12,
+        "object": 1110,
+        "protected_payload": 768,
+        "public_payload": 0,
+        "tag": 0
+      },
+      "method_id": "B14_diffusion_only",
+      "object_path": "reference/known_answers/objects/B14_diffusion_only.qsb",
+      "ordinal": 14,
+      "sha256": {
+        "ciphertext_view": "b93b651f07e08305ba9c0d3ec019511058a05314745efb289f238267acb0c4bc",
+        "descriptor": "06d4271dcf9412039e389306721ccd3b8e228e21d29534589c08dac27456f0cb",
+        "header": "17350352e66ea07454ccc01fee805151ea68f66778a214154d659e0567ae2ef1",
+        "metadata": "44f2e7f881b3c2ea201a30b271077e0da9b8cab65dd97a3818e9d5004918b0aa",
+        "nonce": "b997264ba2312e774713f8b0659326a903321f2cdd85c8527d50c17a52b2524e",
+        "object": "5d30500d92d69e2e799f32a02ff6fd3da92758a9de3b7b0131ec6633d95f9ec9",
+        "protected_payload": "b93b651f07e08305ba9c0d3ec019511058a05314745efb289f238267acb0c4bc",
+        "public_payload": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "recovered_image": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+        "tag": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "authenticated": true,
+      "context": {
+        "canonical_sha256": "4f229bc9587c8c05d008e199c037a063cbd8d2ba1c8d03510f0c3dd7a5ad40f6",
+        "image_id": "known_answer_input_16x16",
+        "master_key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "nonce_hex": "98aecd01d4dc1bb2dca926359c0928e4",
+        "protocol_id": "QSA-KNOWN-ANSWER-V1",
+        "public_material_hex": "",
+        "public_metadata": {
+          "benchmark": "QSA-KNOWN-ANSWER-V1",
+          "metadata_profile": "fixed-reference-v1",
+          "object_semantics": "complete-public-object",
+          "schema": 1
+        },
+        "run_id": "known-answer|B15_geometry_shake_hmac",
+        "seed": 3138139176600456225
+      },
+      "header_consistency": {
+        "image_shape": [
+          16,
+          16,
+          3
+        ],
+        "method_id": "B15_geometry_shake_hmac",
+        "nonce_length": 16,
+        "protected_length": 3072,
+        "public_length": 0,
+        "tag_length": 32
+      },
+      "input_sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+      "lengths": {
+        "ciphertext_view": 3072,
+        "header": 1443,
+        "nonce": 16,
+        "object": 4572,
+        "protected_payload": 3072,
+        "public_payload": 0,
+        "tag": 32
+      },
+      "method_id": "B15_geometry_shake_hmac",
+      "object_path": "reference/known_answers/objects/B15_geometry_shake_hmac.qsb",
+      "ordinal": 15,
+      "sha256": {
+        "ciphertext_view": "0a7a5fb2a2ccc5c1fe3ab2e2e857dfc07452ec93760e4784bee4f923e9e56075",
+        "descriptor": "0cad1ee001c4afe9eed6c97f1bcb707bc4be7f495221f1b41d4d389f658453f5",
+        "header": "59d3ee9b23446e798baf0c5fbcf818c228ef1f945974714f541352d460331289",
+        "metadata": "44f2e7f881b3c2ea201a30b271077e0da9b8cab65dd97a3818e9d5004918b0aa",
+        "nonce": "6c6485895d1e6466f0a0eda264f635f12c4948d51b11e9cd86e10e00618bdf0a",
+        "object": "c547f00bc5a994638100caa2bfa39b9733a2af6b7a820c7a9b56a9c3ed1d855e",
+        "protected_payload": "0a7a5fb2a2ccc5c1fe3ab2e2e857dfc07452ec93760e4784bee4f923e9e56075",
+        "public_payload": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "recovered_image": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+        "tag": "88405be3ac75b8b4c9529073ca31d0d36200cfca06e50edfd63cfe9188acb71c"
+      }
+    },
+    {
+      "authenticated": true,
+      "context": {
+        "canonical_sha256": "ca712a2d37be7e67da631a5b86d3bf0d3386a6d7ce2b74c5821de2eb3dd35918",
+        "image_id": "known_answer_input_16x16",
+        "master_key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "nonce_hex": "12716e34197a30f310f83eba",
+        "protocol_id": "QSA-KNOWN-ANSWER-V1",
+        "public_material_hex": "",
+        "public_metadata": {
+          "benchmark": "QSA-KNOWN-ANSWER-V1",
+          "metadata_profile": "fixed-reference-v1",
+          "object_semantics": "complete-public-object",
+          "schema": 1
+        },
+        "run_id": "known-answer|B16_geometry_aes_gcm",
+        "seed": 3555446897297913944
+      },
+      "header_consistency": {
+        "image_shape": [
+          16,
+          16,
+          3
+        ],
+        "method_id": "B16_geometry_aes_gcm",
+        "nonce_length": 12,
+        "protected_length": 3072,
+        "public_length": 0,
+        "tag_length": 16
+      },
+      "input_sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+      "lengths": {
+        "ciphertext_view": 3072,
+        "header": 1437,
+        "nonce": 12,
+        "object": 4546,
+        "protected_payload": 3072,
+        "public_payload": 0,
+        "tag": 16
+      },
+      "method_id": "B16_geometry_aes_gcm",
+      "object_path": "reference/known_answers/objects/B16_geometry_aes_gcm.qsb",
+      "ordinal": 16,
+      "sha256": {
+        "ciphertext_view": "fe5ea4a762f58bc00e0b580eab3d4a9736f15d8980c408eeb0e8a28fa7cade8e",
+        "descriptor": "6f25fec8ba63299bec3b2e537f19dde1a6cca0510e41520080bda9109bd5931b",
+        "header": "2b38b865da639d7b7975a6cf8549c1363d631e4eb036bd0c90989d580cc287b2",
+        "metadata": "44f2e7f881b3c2ea201a30b271077e0da9b8cab65dd97a3818e9d5004918b0aa",
+        "nonce": "ebb09179c618f5e6c762c70f899c2023d717abb7e4039cf694dfbaa95abb8832",
+        "object": "b39e5eb9f06dbb6e5cf72e539d001d9404d4da6a3a67dcfe09e95c00524fadb2",
+        "protected_payload": "fe5ea4a762f58bc00e0b580eab3d4a9736f15d8980c408eeb0e8a28fa7cade8e",
+        "public_payload": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "recovered_image": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+        "tag": "441538cd43abf5098bff2228aec196cc5131e068ed41d33d1e94dd6fb48c142c"
+      }
+    },
+    {
+      "authenticated": true,
+      "context": {
+        "canonical_sha256": "9b14957319bd21079dcd719655376008b791056a252d5c0eb9706e2fe1254cf5",
+        "image_id": "known_answer_input_16x16",
+        "master_key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "nonce_hex": "19c0bc65aff7572cfc633f55",
+        "protocol_id": "QSA-KNOWN-ANSWER-V1",
+        "public_material_hex": "",
+        "public_metadata": {
+          "benchmark": "QSA-KNOWN-ANSWER-V1",
+          "metadata_profile": "fixed-reference-v1",
+          "object_semantics": "complete-public-object",
+          "schema": 1
+        },
+        "run_id": "known-answer|B17_tip_r0_emulation",
+        "seed": 17752610156800171352
+      },
+      "header_consistency": {
+        "image_shape": [
+          16,
+          16,
+          3
+        ],
+        "method_id": "B17_tip_r0_emulation",
+        "nonce_length": 12,
+        "protected_length": 3072,
+        "public_length": 0,
+        "tag_length": 32
+      },
+      "input_sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+      "lengths": {
+        "ciphertext_view": 3072,
+        "header": 1611,
+        "nonce": 12,
+        "object": 4736,
+        "protected_payload": 3072,
+        "public_payload": 0,
+        "tag": 32
+      },
+      "method_id": "B17_tip_r0_emulation",
+      "object_path": "reference/known_answers/objects/B17_tip_r0_emulation.qsb",
+      "ordinal": 17,
+      "sha256": {
+        "ciphertext_view": "bea0a066b8a666fac8770133e34a7c1f32c963b15efa2d06129b12266b7f0df3",
+        "descriptor": "4916f851c6e8b5c87fdaf33ea8c443b65e8216e4fca0fe9e34edbb64f3049ba8",
+        "header": "475f5c29387fd7b1d5ac6d842c1c94238dbb65e351979b1d12cac05f5dfc7860",
+        "metadata": "44f2e7f881b3c2ea201a30b271077e0da9b8cab65dd97a3818e9d5004918b0aa",
+        "nonce": "0813e7653d10280f32f440d08d32b1dafe62e583e3cdff43acc9e1d9c9257362",
+        "object": "241ccf94ab911de705db5065676e73e188f7b81c6ffbfe4eb22f6b5bc97034b8",
+        "protected_payload": "bea0a066b8a666fac8770133e34a7c1f32c963b15efa2d06129b12266b7f0df3",
+        "public_payload": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "recovered_image": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+        "tag": "7114a87e4192a5b43dc4946737e04be1b5bbb060a3d0c8d7cd5f40fd2c9b1c0e"
+      }
+    },
+    {
+      "authenticated": false,
+      "context": {
+        "canonical_sha256": "09f6f1f47d03547dfbdada4190b0845fc4795413a4dc0cd4d6cd879615d5fef1",
+        "image_id": "known_answer_input_16x16",
+        "master_key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "nonce_hex": "8e9eff061e8331a08b5249db",
+        "protocol_id": "QSA-KNOWN-ANSWER-V1",
+        "public_material_hex": "",
+        "public_metadata": {
+          "benchmark": "QSA-KNOWN-ANSWER-V1",
+          "metadata_profile": "fixed-reference-v1",
+          "object_semantics": "complete-public-object",
+          "schema": 1
+        },
+        "run_id": "known-answer|B18_external_quaternion_feistel",
+        "seed": 8243332828824892754
+      },
+      "header_consistency": {
+        "image_shape": [
+          16,
+          16,
+          3
+        ],
+        "method_id": "B18_external_quaternion_feistel",
+        "nonce_length": 12,
+        "protected_length": 768,
+        "public_length": 0,
+        "tag_length": 0
+      },
+      "input_sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+      "lengths": {
+        "ciphertext_view": 768,
+        "header": 360,
+        "nonce": 12,
+        "object": 1149,
+        "protected_payload": 768,
+        "public_payload": 0,
+        "tag": 0
+      },
+      "method_id": "B18_external_quaternion_feistel",
+      "object_path": "reference/known_answers/objects/B18_external_quaternion_feistel.qsb",
+      "ordinal": 18,
+      "sha256": {
+        "ciphertext_view": "e42cf17402b2cb8e886974f7d0b0fce6c8f9375287fed753be7e648f48f30660",
+        "descriptor": "b8351bce4db9a6cdd7ebef72c9226a8bc1bda7b6a60bc433a9259b812c633ef3",
+        "header": "d41f8dc1057d98e4f4e40eccedefc28dbcb1caed0d505ca1bf9539ccbb6424a9",
+        "metadata": "44f2e7f881b3c2ea201a30b271077e0da9b8cab65dd97a3818e9d5004918b0aa",
+        "nonce": "bb7debd7ff38d28e9431d71040c210e0a8dd6f18e28f6976a9aedd29bd91f714",
+        "object": "1d487bf3c5c1fbc6ce7da9b0d5584c2ad073255a4b90957bc459647821d8f1db",
+        "protected_payload": "e42cf17402b2cb8e886974f7d0b0fce6c8f9375287fed753be7e648f48f30660",
+        "public_payload": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "recovered_image": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+        "tag": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "authenticated": false,
+      "context": {
+        "canonical_sha256": "c5693a342a41984a62af2c194cace5f206ece856ac720d787f454252ceb74a69",
+        "image_id": "known_answer_input_16x16",
+        "master_key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "nonce_hex": "cc662df808a2327496fb9b30",
+        "protocol_id": "QSA-KNOWN-ANSWER-V1",
+        "public_material_hex": "",
+        "public_metadata": {
+          "benchmark": "QSA-KNOWN-ANSWER-V1",
+          "metadata_profile": "fixed-reference-v1",
+          "object_semantics": "complete-public-object",
+          "schema": 1
+        },
+        "run_id": "known-answer|B19_external_chaos_pd",
+        "seed": 5893828049306883175
+      },
+      "header_consistency": {
+        "image_shape": [
+          16,
+          16,
+          3
+        ],
+        "method_id": "B19_external_chaos_pd",
+        "nonce_length": 12,
+        "protected_length": 768,
+        "public_length": 0,
+        "tag_length": 0
+      },
+      "input_sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+      "lengths": {
+        "ciphertext_view": 768,
+        "header": 342,
+        "nonce": 12,
+        "object": 1131,
+        "protected_payload": 768,
+        "public_payload": 0,
+        "tag": 0
+      },
+      "method_id": "B19_external_chaos_pd",
+      "object_path": "reference/known_answers/objects/B19_external_chaos_pd.qsb",
+      "ordinal": 19,
+      "sha256": {
+        "ciphertext_view": "3f495cfd7d7ecdd4080b870cc1ea30741278bb457b93a3c9b04a554a005287bf",
+        "descriptor": "5185ec6d11c83ab792121ce9ec61ae0f827c0317d9cc45b4bb2d99f1b0347449",
+        "header": "c51473949fc31deca8a33c1554b0278da6909346c29f866f2fef27ccf8e196fe",
+        "metadata": "44f2e7f881b3c2ea201a30b271077e0da9b8cab65dd97a3818e9d5004918b0aa",
+        "nonce": "58d2f78635d831647bd42c92d5143d754fed78d8c4ce9e10eb2768b9251adbd8",
+        "object": "7b2203c843943ac69b4b11803b66988060c9edd6e828ffc9feb7946e6f5a84dc",
+        "protected_payload": "3f495cfd7d7ecdd4080b870cc1ea30741278bb457b93a3c9b04a554a005287bf",
+        "public_payload": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "recovered_image": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+        "tag": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "authenticated": true,
+      "context": {
+        "canonical_sha256": "63ca71871789245fa2be4643bc3e7a36837d3627c2863c27906134ba255bd0e9",
+        "image_id": "known_answer_input_16x16",
+        "master_key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "nonce_hex": "82b42357bc0480200c4e3602",
+        "protocol_id": "QSA-KNOWN-ANSWER-V1",
+        "public_material_hex": "",
+        "public_metadata": {
+          "benchmark": "QSA-KNOWN-ANSWER-V1",
+          "metadata_profile": "fixed-reference-v1",
+          "object_semantics": "complete-public-object",
+          "schema": 1
+        },
+        "run_id": "known-answer|B20_full_aead_explicit_preview",
+        "seed": 11021557392200303856
+      },
+      "header_consistency": {
+        "image_shape": [
+          16,
+          16,
+          3
+        ],
+        "method_id": "B20_full_aead_explicit_preview",
+        "nonce_length": 12,
+        "protected_length": 768,
+        "public_length": 755,
+        "tag_length": 16
+      },
+      "input_sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+      "lengths": {
+        "ciphertext_view": 768,
+        "header": 393,
+        "nonce": 12,
+        "object": 1953,
+        "protected_payload": 768,
+        "public_payload": 755,
+        "tag": 16
+      },
+      "method_id": "B20_full_aead_explicit_preview",
+      "object_path": "reference/known_answers/objects/B20_full_aead_explicit_preview.qsb",
+      "ordinal": 20,
+      "sha256": {
+        "ciphertext_view": "5aae53ffb06b82f57b951787b841525b66b61bcc720151f1a3ae56d0ee9be07c",
+        "descriptor": "f8fd8bf1ac06477b0e959fe85f49202dddf0e47044304cb653034855de1604df",
+        "header": "45800f47f0745ece82f40dfe954afdc6e29eae286270829fdd92b6dc6cd30f1d",
+        "metadata": "44f2e7f881b3c2ea201a30b271077e0da9b8cab65dd97a3818e9d5004918b0aa",
+        "nonce": "43e0609347d2cfc2ee5ca20733d27255f7c945063d26df84af5d994be77a200f",
+        "object": "5803bb6fa2dd695de7a7d2209622f654518512db4d5c0e29afa4d4c3c069d3c0",
+        "protected_payload": "5aae53ffb06b82f57b951787b841525b66b61bcc720151f1a3ae56d0ee9be07c",
+        "public_payload": "a7a5ac5cad77a67a8d6c0bd83a050a20ab4461b6a334690dfdea55a252acc004",
+        "recovered_image": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+        "tag": "95e09ef5faf5ccea7199abf6a2602c78aae044d47aeec8b5745463eca8ddab10"
+      }
+    },
+    {
+      "authenticated": false,
+      "context": {
+        "canonical_sha256": "efe32ff6451ebde630eaefddade9f217dc25bee2162a7ff5354603dcef9898ad",
+        "image_id": "known_answer_input_16x16",
+        "master_key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "nonce_hex": "c2fe4ca2efab0fbb5e9c8a4c",
+        "protocol_id": "QSA-KNOWN-ANSWER-V1",
+        "public_material_hex": "7bcc226454c942dbb454b1d8dfec0d89c895d5abb92a5f716fbc9f7c132d726d159ffcf76bf201a18d9501a47d04ca296cdef16c2240d8e1dedf0b38dfd6be2cc49ec83a09ae26bf87d0fac0bea0f2b3a6ba97aecc4bd96fe663774d4729684d30e50454aa49c01caff3a12f2286524cfc2c0ab5794b3343e7ec66f8cc45e602d7fe4a0947143211585a364ad8058808d6b980c1abeba6316d25b1c30d269dc68b03c112e6a09c119d4e929d0f3aa1f8a4e0e8b37664bc012b6aa2bb24eacc5a33027f4c917273ee35c97ec25212a70f531bff3ba8874ed063ccf22990ddea65ba127915045ea629ffaea10aad1c5c0dee7ff85c2fc7a173baa370236f5af08194ee4a0da2835052ec4f8ea7b164c0cdc7d66642f643c73be2353d96db765a34a46fdb632d9219646584b011c370f06956633e948ea9eda4e889ef66db9815535539135fa2fd368ca57ef00d7019c323c8a4616f2b5e03e6dc051a834a1752d41fe74a524b1c02af7fde1d306b536e312c5a310c17b4bc9112c156b587e3aa7c74e62a35640771f8b972b0b66fdcf73a0ffc7231627059ae504503e3918cd744b3a0002c2afd387f31b9cc5dfd63ff0261c57158b9d7b80c79e789f1492d92e8d65e93c57c9102b522aeda0ccf12d98f9b3d6c0cb6d75a037be443ba2d306a8ef742223a32304147c6fc63dd437594ce1dde0c5ddc692694d5c49de3dfdeabc3658778e474f1b15bbe9ee4e9bb22cdb6a4f5b5ade72bf026ec3c11d116a02ab2418d1fbd54456fa7971268f609b3e9b52df4be388048b83c974fe58aa67d13572cf96c89187cab3dfbcee335aff266b2769324e90304299beee82e992830fb494564349d38e01c16b56233db9b712c660f1a4c06cf1c6909fc0505dc5172910edaaa443af1341e1d8f6fc292ea452c7f94fe404232533959e6a86d68eb214d68dd27076adc0f2b2b4891ad54110f8c993fa9370478e4bf2f1632a4a5eda0e7715bf0511faf5df349d6de9f3cde5b64450eb2417f059009cfb350ce5e9adcf2660639d41315279371be3a89d2f4d0dc3a064b3a5a0f80962362b05afc29282a58",
+        "public_metadata": {
+          "benchmark": "QSA-KNOWN-ANSWER-V1",
+          "metadata_profile": "fixed-reference-v1",
+          "object_semantics": "complete-public-object",
+          "schema": 1
+        },
+        "run_id": "known-answer|B21_public_fresh_pad",
+        "seed": 14893473788869163278
+      },
+      "header_consistency": {
+        "image_shape": [
+          16,
+          16,
+          3
+        ],
+        "method_id": "B21_public_fresh_pad",
+        "nonce_length": 12,
+        "protected_length": 768,
+        "public_length": 768,
+        "tag_length": 0
+      },
+      "input_sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+      "lengths": {
+        "ciphertext_view": 768,
+        "header": 414,
+        "nonce": 12,
+        "object": 1971,
+        "protected_payload": 768,
+        "public_payload": 768,
+        "tag": 0
+      },
+      "method_id": "B21_public_fresh_pad",
+      "object_path": "reference/known_answers/objects/B21_public_fresh_pad.qsb",
+      "ordinal": 21,
+      "sha256": {
+        "ciphertext_view": "16a14f6674c0cea271eb135755f427f32ee1cd4913435f044ab684ac842b4863",
+        "descriptor": "7350dfec270ddbace5cd9eb2159eda59ce3ed685d39325c2318752c310985d9a",
+        "header": "a4ff1a617d7d95688a76e5e9d975bae0592c5dba40fd4b77eb7acde7e46e4d74",
+        "metadata": "44f2e7f881b3c2ea201a30b271077e0da9b8cab65dd97a3818e9d5004918b0aa",
+        "nonce": "353541fb7c39f94c2d51de45c9d6ec8f0691847cf05006085c4c4b669b68ff56",
+        "object": "9eb9b72004de251c1059e9f5593972bbd4fd1becb49e84f670687b7f0cbb7a98",
+        "protected_payload": "16a14f6674c0cea271eb135755f427f32ee1cd4913435f044ab684ac842b4863",
+        "public_payload": "9e85834c2e30829e372c98a485329fca4af40af492c0014e56fe71f36c32e9c2",
+        "recovered_image": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+        "tag": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "authenticated": false,
+      "context": {
+        "canonical_sha256": "ba6ac48e4978f2602af63d55d2a3ba86bb74063e2f1338d182459f9327a80d33",
+        "image_id": "known_answer_input_16x16",
+        "master_key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "nonce_hex": "ce04bf6d8e6ce326feaa259b",
+        "protocol_id": "QSA-KNOWN-ANSWER-V1",
+        "public_material_hex": "eacd9a2bc62db303a96a9138714ad056e234a469e98392d77b5c750f689cc56a",
+        "public_metadata": {
+          "benchmark": "QSA-KNOWN-ANSWER-V1",
+          "metadata_profile": "fixed-reference-v1",
+          "object_semantics": "complete-public-object",
+          "schema": 1
+        },
+        "run_id": "known-answer|B22_public_wideblock_prp",
+        "seed": 3570792460580747761
+      },
+      "header_consistency": {
+        "image_shape": [
+          16,
+          16,
+          3
+        ],
+        "method_id": "B22_public_wideblock_prp",
+        "nonce_length": 12,
+        "protected_length": 768,
+        "public_length": 32,
+        "tag_length": 0
+      },
+      "input_sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+      "lengths": {
+        "ciphertext_view": 768,
+        "header": 477,
+        "nonce": 12,
+        "object": 1298,
+        "protected_payload": 768,
+        "public_payload": 32,
+        "tag": 0
+      },
+      "method_id": "B22_public_wideblock_prp",
+      "object_path": "reference/known_answers/objects/B22_public_wideblock_prp.qsb",
+      "ordinal": 22,
+      "sha256": {
+        "ciphertext_view": "40a6da81efed7b623bf1e88a41fa758dfbce273420192ab87b6de22940a51532",
+        "descriptor": "4907f89a5b0437a98fd3e5d08b828d37aa6cc04a8c2c1199c2d41dc3c7f87e32",
+        "header": "c3d033ab5a29a72a51cf7d4b84e1c56303ffe47348217e59afd39d541c2da8c6",
+        "metadata": "44f2e7f881b3c2ea201a30b271077e0da9b8cab65dd97a3818e9d5004918b0aa",
+        "nonce": "b6cf685fb8326a34f3fcfd4c28a1a62a8982d2288459bd22a42c0e47974f5248",
+        "object": "6e61540577301d7d5e5a4ca1405a383fab071ebe1b0db1389b80bb1965538050",
+        "protected_payload": "40a6da81efed7b623bf1e88a41fa758dfbce273420192ab87b6de22940a51532",
+        "public_payload": "0bb072bf25ec99bcb6e260501efd78d04897846ee4cc14e5f1527c168059f447",
+        "recovered_image": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+        "tag": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "authenticated": true,
+      "context": {
+        "canonical_sha256": "ee5833fbb0ae415afd2c62634f6fdb9c9381a160486c54c3ccf5922183eb95e6",
+        "image_id": "known_answer_input_16x16",
+        "master_key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "nonce_hex": "1c63e9353b1396f6cdda328b",
+        "protocol_id": "QSA-KNOWN-ANSWER-V1",
+        "public_material_hex": "",
+        "public_metadata": {
+          "benchmark": "QSA-KNOWN-ANSWER-V1",
+          "metadata_profile": "fixed-reference-v1",
+          "object_semantics": "complete-public-object",
+          "schema": 1
+        },
+        "run_id": "known-answer|B23_secure_fixed_header",
+        "seed": 8835785736989298472
+      },
+      "header_consistency": {
+        "image_shape": [
+          16,
+          16,
+          3
+        ],
+        "method_id": "B23_secure_fixed_header",
+        "nonce_length": 12,
+        "protected_length": 800,
+        "public_length": 0,
+        "tag_length": 16
+      },
+      "input_sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+      "lengths": {
+        "ciphertext_view": 800,
+        "header": 391,
+        "nonce": 12,
+        "object": 1228,
+        "protected_payload": 800,
+        "public_payload": 0,
+        "tag": 16
+      },
+      "method_id": "B23_secure_fixed_header",
+      "object_path": "reference/known_answers/objects/B23_secure_fixed_header.qsb",
+      "ordinal": 23,
+      "sha256": {
+        "ciphertext_view": "bed8a0dfe475374155701ab7c9feb1290a9aef547facc994c61da7348f02a05b",
+        "descriptor": "3eca4e1fdc845fd3a3b26e478faf357587be0b25d7485ba7530aec318a8c2c80",
+        "header": "b93b6797b2fae2ca649f3e0312360fce2130f07ee5c101749d5315a2b89a4155",
+        "metadata": "44f2e7f881b3c2ea201a30b271077e0da9b8cab65dd97a3818e9d5004918b0aa",
+        "nonce": "52d80d363bb51fc963f06307b82e5f50d20492034aa074415306d7065132df31",
+        "object": "4cb757e84d720e8cc1365f58b7f450fb2fb9d27ecf2398f2549c1fef5c0ef49f",
+        "protected_payload": "bed8a0dfe475374155701ab7c9feb1290a9aef547facc994c61da7348f02a05b",
+        "public_payload": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "recovered_image": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+        "tag": "98601447c2e73854223c0c703c4a6f89c1d9a6778b01e166bd5ecaea29b053ec"
+      }
+    },
+    {
+      "authenticated": true,
+      "context": {
+        "canonical_sha256": "43f002fc48f3951900e413ad8930ae0b2da190672543a2e86c668c446b041fd4",
+        "image_id": "known_answer_input_16x16",
+        "master_key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "nonce_hex": "9285d9a3ad72a88d5267dd1e",
+        "protocol_id": "QSA-KNOWN-ANSWER-V1",
+        "public_material_hex": "",
+        "public_metadata": {
+          "benchmark": "QSA-KNOWN-ANSWER-V1",
+          "metadata_profile": "fixed-reference-v1",
+          "object_semantics": "complete-public-object",
+          "schema": 1
+        },
+        "run_id": "known-answer|B24_aes_gcm_siv",
+        "seed": 10117165352873520474
+      },
+      "header_consistency": {
+        "image_shape": [
+          16,
+          16,
+          3
+        ],
+        "method_id": "B24_aes_gcm_siv",
+        "nonce_length": 12,
+        "protected_length": 768,
+        "public_length": 0,
+        "tag_length": 16
+      },
+      "input_sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+      "lengths": {
+        "ciphertext_view": 768,
+        "header": 412,
+        "nonce": 12,
+        "object": 1217,
+        "protected_payload": 768,
+        "public_payload": 0,
+        "tag": 16
+      },
+      "method_id": "B24_aes_gcm_siv",
+      "object_path": "reference/known_answers/objects/B24_aes_gcm_siv.qsb",
+      "ordinal": 24,
+      "sha256": {
+        "ciphertext_view": "7d2f6fc5f4ec8a7c5cfa849aa8c40cdedf06ca1a73f8111f6138c432b411838c",
+        "descriptor": "2faa5b116c24804cdcc8c9ab17f3f1c3bd9ae2c3b45d747c426b93312d5e4405",
+        "header": "a621f86b5228e827a8553e78f3b1ef0d23215b0d0ce393174e6b4cfcb93633cf",
+        "metadata": "44f2e7f881b3c2ea201a30b271077e0da9b8cab65dd97a3818e9d5004918b0aa",
+        "nonce": "7a280474bdaf5d3fc0105743995e7b58812ff34046618cd84cd7d23c06348b40",
+        "object": "1981b887e8c9adadaa0288800d996c89802505129080643df13a39bf64ff2d54",
+        "protected_payload": "7d2f6fc5f4ec8a7c5cfa849aa8c40cdedf06ca1a73f8111f6138c432b411838c",
+        "public_payload": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "recovered_image": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+        "tag": "3ffd64564c69a72c5c6a37c49c205a87df3c35109470f615a05dba63bd82ebdc"
+      }
+    }
+  ],
+  "config_file_sha256": "a3e9b0cf44804fd3d276f4ce5a975e6273d75893bc69af418a96b764a1f0fd4e",
+  "config_schema_sha256": "f0ee654b775b44f0a3d0dee2089b43404e80f137f4508a0f08e290b0266d6d1e",
+  "input": {
+    "byte_length": 768,
+    "channel_maxima": [
+      251,
+      253,
+      255
+    ],
+    "channel_minima": [
+      1,
+      1,
+      1
+    ],
+    "distinct_byte_values": 220,
+    "dtype": "uint8",
+    "generator_id": "coordinate-mix-v1",
+    "layout": "C-order RGB",
+    "path": "reference/known_answers/input.rgb",
+    "sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+    "shape": [
+      16,
+      16,
+      3
+    ]
+  },
+  "manifest_id": "QSA-KNOWN-ANSWER-MANIFEST-V1",
+  "method_order": [
+    "B01_aes_gcm",
+    "B02_chacha20_poly1305",
+    "B03_shake_hmac",
+    "B04_public_high_entropy",
+    "B05_identity",
+    "B06_reversible_color",
+    "B07_pca_klt",
+    "B08_random_so3",
+    "B09_fixed_axis_quaternion",
+    "B10_caseii",
+    "B11_curvature_caseii",
+    "B12_chebyshev_only",
+    "B13_permutation_only",
+    "B14_diffusion_only",
+    "B15_geometry_shake_hmac",
+    "B16_geometry_aes_gcm",
+    "B17_tip_r0_emulation",
+    "B18_external_quaternion_feistel",
+    "B19_external_chaos_pd",
+    "B20_full_aead_explicit_preview",
+    "B21_public_fresh_pad",
+    "B22_public_wideblock_prp",
+    "B23_secure_fixed_header",
+    "B24_aes_gcm_siv"
+  ],
+  "method_order_sha256": "497707b28556e123745c006f950c93d345c63415752c69359e1a49b06129e5fe",
+  "method_profile": "extended",
+  "object_format": {
+    "component_order": [
+      "header",
+      "nonce",
+      "public_payload",
+      "protected_payload",
+      "tag"
+    ],
+    "magic_ascii": "QSB1",
+    "version": 1
+  },
+  "object_set_sha256": "aebb6c9fd4ae156eb6ffca4bf6753144ddf6bdb4295d177fefb2c5be692f85f2",
+  "operational_use_prohibited": true,
+  "protocol_id": "QSA-KNOWN-ANSWER-V1",
+  "protocol_registry_sha256": "942db7b9ed8a0ed0e23b96f677bf17b315b212f4b84067f2d827f22a22c051a8",
+  "public_test_values": true,
+  "reference_semantics": {
+    "fixed_known_answer": "Each case compares the complete serialized object and component digests against frozen expected values.",
+    "round_trip": "Exact recovery is an additional functional check and does not replace the frozen expected-output comparison."
+  },
+  "reference_set_id": "QSA-KNOWN-ANSWER-SET-V1",
+  "registry_manifest_sha256": "d38377b95819e8c72b2ef5f807193d4d2235736b13a3ae81972f987e1924709a",
+  "schema_version": 1,
+  "source_authorities": [
+    {
+      "path": "pyproject.toml",
+      "sha256": "bdd9d5b71fc4b0e9035dda220d026bf5228b289fa9442601f21785c4308a3804"
+    },
+    {
+      "path": "configs/reference/known_answer_inputs.json",
+      "sha256": "a3e9b0cf44804fd3d276f4ce5a975e6273d75893bc69af418a96b764a1f0fd4e"
+    },
+    {
+      "path": "configs/reference/known_answer_inputs.schema.json",
+      "sha256": "f0ee654b775b44f0a3d0dee2089b43404e80f137f4508a0f08e290b0266d6d1e"
+    },
+    {
+      "path": "registries/construction_registry.json",
+      "sha256": "7b84e00c39daef7893f9000de26c52aadc5020982da2850eef426b37a375b889"
+    },
+    {
+      "path": "registries/registry_manifest.json",
+      "sha256": "d38377b95819e8c72b2ef5f807193d4d2235736b13a3ae81972f987e1924709a"
+    },
+    {
+      "path": "registries/protocol_registry.json",
+      "sha256": "942db7b9ed8a0ed0e23b96f677bf17b315b212f4b84067f2d827f22a22c051a8"
+    },
+    {
+      "path": "src/qsa_benchmark/benchmark/components.py",
+      "sha256": "d101ce732c1ba0c4c001f226229f5a2c1f5a94a973b10991ca18d1da0a76e47e"
+    },
+    {
+      "path": "src/qsa_benchmark/benchmark/constructions.py",
+      "sha256": "94311f29dcd15cf5d614de960369d5246e4dfe92341f83a0820791ba3901d403"
+    },
+    {
+      "path": "src/qsa_benchmark/benchmark/controls.py",
+      "sha256": "68a4105e570aafa59a3125fba8a6594b46c704af1e4e9a9db37188cb171d9fba"
+    },
+    {
+      "path": "src/qsa_benchmark/benchmark/crypto.py",
+      "sha256": "c92d49a31e439cfe6598baded5b55a51dd6322d820f3d07eb71b59adcaea4a58"
+    },
+    {
+      "path": "src/qsa_benchmark/benchmark/envelope.py",
+      "sha256": "9a52e2528e966f367778e56c871754a7c3105b2c05f7a1a1bf83b016bbecf5d9"
+    },
+    {
+      "path": "src/qsa_benchmark/benchmark/external.py",
+      "sha256": "f8160a117d3f99afc3f4de6a13c3e32b424c02c62e744fccc35671c022fbdd58"
+    },
+    {
+      "path": "src/qsa_benchmark/benchmark/finite.py",
+      "sha256": "dbb38c338863d6108926839b482746d782a0ca4429984d06593b4d11c21b2250"
+    },
+    {
+      "path": "src/qsa_benchmark/benchmark/models.py",
+      "sha256": "cafd8e4da797e2b082bf3798ce43da0e4c486ed55c7f593cbba13f416fe0df79"
+    },
+    {
+      "path": "src/qsa_benchmark/benchmark/quaternion.py",
+      "sha256": "0877074482edcf99f6e20fe4a732d1fca304bc70fd7b6b41d5adfff142e77b38"
+    },
+    {
+      "path": "src/qsa_benchmark/benchmark/registry.py",
+      "sha256": "ee400f59f37eefbb520a2c9d49f165413e30ec35551e063cb2c4efe07e20f783"
+    },
+    {
+      "path": "src/qsa_benchmark/benchmark/serialization.py",
+      "sha256": "951a227cf9c16b1cf5eacde40daece60f4cd390ae2a87769a38e75a098cc4ec0"
+    },
+    {
+      "path": "src/qsa_benchmark/benchmark/transforms.py",
+      "sha256": "750965a7887b022901c3f79b023a3dc8d586bea7c8ebe66e378f8b86829a1e19"
+    },
+    {
+      "path": "src/qsa_benchmark/benchmark/utils.py",
+      "sha256": "4edaacd8cf7030a291a7701dc1c0b6cb2e8c7489dd8261bf9f3c78c8f5b335ff"
+    },
+    {
+      "path": "src/qsa_benchmark/protocol/registry.py",
+      "sha256": "dd623dcbe70ab76d3110723740fd6de7f34dca46a1fa375c185cdcd81bf3a677"
+    },
+    {
+      "path": "src/qsa_benchmark/protocol/schedule.py",
+      "sha256": "421c7a5995839673a6f5f02fbd2ec1463c8ce6e14d58c6defda6c37c82fafbe0"
+    },
+    {
+      "path": "src/qsa_benchmark/validation/known_answers.py",
+      "sha256": "b4e3edf49bcb661fdf8a449d7cd5f8b5c4b417f4435d82a8ebc86d9e03533bc6"
+    },
+    {
+      "path": "scripts/generate_reference_assets.py",
+      "sha256": "b10c386d22aab791048c16ec12117ed6229151e5155670b32990294a001c1e76"
+    }
+  ],
+  "test_value_notice": "All keys, nonces, seeds, and public materials in this reference set are public test values. They must not be reused in operational systems.",
+  "total_object_bytes": 58915
+}

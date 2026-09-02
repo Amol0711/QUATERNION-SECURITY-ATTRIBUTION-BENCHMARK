@@ -1,0 +1,550 @@
+{
+  "direct_dependency_groups": {
+    "build": [
+      "setuptools"
+    ],
+    "runtime": [
+      "cryptography",
+      "jsonschema",
+      "numpy",
+      "packaging",
+      "pandas",
+      "pillow",
+      "psutil",
+      "pyyaml",
+      "scikit-image",
+      "scikit-learn",
+      "scipy"
+    ],
+    "test": [
+      "pytest"
+    ]
+  },
+  "environment_canonical_sha256": "ab91f2f58e86b1f6b578bb4caee5c5a80d6e6a98246d60d90536762262f1bedd",
+  "installer": {
+    "metadata_sha256": "405c63d6d2e993c8465ab8102d1849614a70a3fd45a81af8dce4f4b2b2197265",
+    "name": "pip",
+    "version": "25.1.1"
+  },
+  "lock_id": "QSA-REFERENCE-ENVIRONMENT-LOCK-V1",
+  "optional_native_accelerator": {
+    "python_packages": [],
+    "required": false,
+    "system_requirements": [
+      "C compiler with C11 support",
+      "OpenMP runtime and development support",
+      "OpenSSL libcrypto headers and library"
+    ],
+    "validated_toolchain": {
+      "compiler": "cc (Debian 14.2.0-19) 14.2.0",
+      "openmp_runtime": "libgomp",
+      "openssl": "OpenSSL 3.5.5 27 Jan 2026 (Library: OpenSSL 3.5.5 27 Jan 2026)"
+    }
+  },
+  "packages": [
+    {
+      "active_requirements": [],
+      "dependencies": [],
+      "metadata_sha256": "4cd40e690f23bf37cbcad34efd6758e062df1df07c86833f7e3ce95bf1fa38cc",
+      "name": "attrs",
+      "requires_python": ">=3.9",
+      "roles": [
+        "transitive"
+      ],
+      "version": "26.1.0"
+    },
+    {
+      "active_requirements": [
+        "pycparser; implementation_name != \"PyPy\""
+      ],
+      "dependencies": [
+        "pycparser"
+      ],
+      "metadata_sha256": "b98ce7e3417af089bc12d5c73412d9b3b1683ccf8ec73c986c35ac8c9be1ba39",
+      "name": "cffi",
+      "requires_python": ">=3.9",
+      "roles": [
+        "transitive"
+      ],
+      "version": "2.0.0"
+    },
+    {
+      "active_requirements": [
+        "cffi>=2.0.0; python_full_version >= \"3.9\" and platform_python_implementation != \"PyPy\""
+      ],
+      "dependencies": [
+        "cffi"
+      ],
+      "metadata_sha256": "23772263d659f0d86ba11a8de47e7e437df320dc4c531054aec18097f35cfc62",
+      "name": "cryptography",
+      "requires_python": ">=3.8, !=3.9.0, !=3.9.1",
+      "roles": [
+        "runtime"
+      ],
+      "version": "46.0.4"
+    },
+    {
+      "active_requirements": [
+        "numpy",
+        "pillow>=8.3.2"
+      ],
+      "dependencies": [
+        "numpy",
+        "pillow"
+      ],
+      "metadata_sha256": "c2cf95dfd17c1439017f5b81c50c0b543318c01e462cc659def0b7cbc56e7216",
+      "name": "imageio",
+      "requires_python": ">=3.10",
+      "roles": [
+        "transitive"
+      ],
+      "version": "2.37.3"
+    },
+    {
+      "active_requirements": [],
+      "dependencies": [],
+      "metadata_sha256": "40d773f84e4e112f495bbf4f1be9cbd2d456c0aeb6ef5311f75d1bf322f2165b",
+      "name": "iniconfig",
+      "requires_python": ">=3.10",
+      "roles": [
+        "transitive"
+      ],
+      "version": "2.3.0"
+    },
+    {
+      "active_requirements": [],
+      "dependencies": [],
+      "metadata_sha256": "cee9c60896ae4e7a965a840fbde50d111d2f8018f61201d1ed2e9fc3dd4883e6",
+      "name": "joblib",
+      "requires_python": ">=3.9",
+      "roles": [
+        "transitive"
+      ],
+      "version": "1.5.3"
+    },
+    {
+      "active_requirements": [
+        "attrs>=22.2.0",
+        "jsonschema-specifications>=2023.03.6",
+        "referencing>=0.28.4",
+        "rpds-py>=0.25.0"
+      ],
+      "dependencies": [
+        "attrs",
+        "jsonschema-specifications",
+        "referencing",
+        "rpds-py"
+      ],
+      "metadata_sha256": "05b189866ca98a96da3934bf6b83687ced3ff85325273b77e16b705f6d8b26d2",
+      "name": "jsonschema",
+      "requires_python": ">=3.10",
+      "roles": [
+        "runtime"
+      ],
+      "version": "4.26.0"
+    },
+    {
+      "active_requirements": [
+        "referencing>=0.31.0"
+      ],
+      "dependencies": [
+        "referencing"
+      ],
+      "metadata_sha256": "35abd41757f32b4ea24756920ded47b70173d77cbc052a5a6d3ab583b2e8d89d",
+      "name": "jsonschema-specifications",
+      "requires_python": ">=3.9",
+      "roles": [
+        "transitive"
+      ],
+      "version": "2025.9.1"
+    },
+    {
+      "active_requirements": [
+        "packaging"
+      ],
+      "dependencies": [
+        "packaging"
+      ],
+      "metadata_sha256": "ab65c86264937d8ac080d5fc895db927ff2f964a07cb92f91768db155fc0c37c",
+      "name": "lazy-loader",
+      "requires_python": ">=3.9",
+      "roles": [
+        "transitive"
+      ],
+      "version": "0.5"
+    },
+    {
+      "active_requirements": [],
+      "dependencies": [],
+      "metadata_sha256": "aca5d94a97d1f70f301d033addb635f6e66be8973a00aba4127637eed2ef316a",
+      "name": "networkx",
+      "requires_python": "!=3.14.1,>=3.11",
+      "roles": [
+        "transitive"
+      ],
+      "version": "3.6.1"
+    },
+    {
+      "active_requirements": [],
+      "dependencies": [],
+      "metadata_sha256": "6002f29765e5bc1a3be4a1b92ed56b64968a0fecba73e7f81cd536d0c40f4fa3",
+      "name": "numpy",
+      "requires_python": ">=3.11",
+      "roles": [
+        "runtime"
+      ],
+      "version": "2.3.5"
+    },
+    {
+      "active_requirements": [],
+      "dependencies": [],
+      "metadata_sha256": "5b611a609c38fefc3d616bf45d20aec98fb7d53f245daca9e2c30fc85c7ac282",
+      "name": "packaging",
+      "requires_python": ">=3.8",
+      "roles": [
+        "runtime"
+      ],
+      "version": "25.0"
+    },
+    {
+      "active_requirements": [
+        "numpy>=1.26.0; python_version >= \"3.12\"",
+        "python-dateutil>=2.8.2",
+        "pytz>=2020.1",
+        "tzdata>=2022.7"
+      ],
+      "dependencies": [
+        "numpy",
+        "python-dateutil",
+        "pytz",
+        "tzdata"
+      ],
+      "metadata_sha256": "f05423139806d0d75d527aba42689260084dc7a2dad1f4f32b16770f97d1f70f",
+      "name": "pandas",
+      "requires_python": ">=3.9",
+      "roles": [
+        "runtime"
+      ],
+      "version": "2.2.3"
+    },
+    {
+      "active_requirements": [],
+      "dependencies": [],
+      "metadata_sha256": "8fc07146cab33ef7582361dab6eac596d340b03ec648f18217da7894f73838c8",
+      "name": "pillow",
+      "requires_python": ">=3.10",
+      "roles": [
+        "runtime"
+      ],
+      "version": "12.3.0"
+    },
+    {
+      "active_requirements": [],
+      "dependencies": [],
+      "metadata_sha256": "7438c35ee25a095eb7416f84b461c2d74425c5e734ad54c3912453c65244e01c",
+      "name": "pluggy",
+      "requires_python": ">=3.9",
+      "roles": [
+        "transitive"
+      ],
+      "version": "1.6.0"
+    },
+    {
+      "active_requirements": [],
+      "dependencies": [],
+      "metadata_sha256": "525f8ba78523cf7bc3759d62a105e7c57fd679ea702402b9449fb0746aa0217f",
+      "name": "psutil",
+      "requires_python": ">=3.6",
+      "roles": [
+        "runtime"
+      ],
+      "version": "7.2.2"
+    },
+    {
+      "active_requirements": [],
+      "dependencies": [],
+      "metadata_sha256": "f547a60b0ab54cc2f242213d1f87960ad80df7dd5dfeb98d17a444d48bfb6b93",
+      "name": "pycparser",
+      "requires_python": ">=3.10",
+      "roles": [
+        "transitive"
+      ],
+      "version": "3.0"
+    },
+    {
+      "active_requirements": [],
+      "dependencies": [],
+      "metadata_sha256": "e0528f51b30427fae94723662ba622f8d8db2a4d8d3f1365698d67a52450a845",
+      "name": "pygments",
+      "requires_python": ">=3.9",
+      "roles": [
+        "transitive"
+      ],
+      "version": "2.20.0"
+    },
+    {
+      "active_requirements": [
+        "iniconfig>=1.0.1",
+        "packaging>=22",
+        "pluggy<2,>=1.5",
+        "pygments>=2.7.2"
+      ],
+      "dependencies": [
+        "iniconfig",
+        "packaging",
+        "pluggy",
+        "pygments"
+      ],
+      "metadata_sha256": "14131718cc1f40cfecb5eac338037029a519b6392876100afec1e949f023d1ed",
+      "name": "pytest",
+      "requires_python": ">=3.10",
+      "roles": [
+        "test"
+      ],
+      "version": "9.0.2"
+    },
+    {
+      "active_requirements": [
+        "six>=1.5"
+      ],
+      "dependencies": [
+        "six"
+      ],
+      "metadata_sha256": "a9d436da322be808332f98d88325998e87cb693a678a9969feb4cfad729a6e93",
+      "name": "python-dateutil",
+      "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7",
+      "roles": [
+        "transitive"
+      ],
+      "version": "2.9.0.post0"
+    },
+    {
+      "active_requirements": [],
+      "dependencies": [],
+      "metadata_sha256": "56b1e4933e430bf524cc2cc6621bcd64cda12947ed22978d0ee241cd7f02f588",
+      "name": "pytz",
+      "requires_python": "",
+      "roles": [
+        "transitive"
+      ],
+      "version": "2026.2"
+    },
+    {
+      "active_requirements": [],
+      "dependencies": [],
+      "metadata_sha256": "03c3b415ed38d09faedc49360e930769b40c58f68585e6de00e2e4916a858d34",
+      "name": "pyyaml",
+      "requires_python": ">=3.8",
+      "roles": [
+        "runtime"
+      ],
+      "version": "6.0.3"
+    },
+    {
+      "active_requirements": [
+        "attrs>=22.2.0",
+        "rpds-py>=0.7.0"
+      ],
+      "dependencies": [
+        "attrs",
+        "rpds-py"
+      ],
+      "metadata_sha256": "c93b00e6ab1524fd60848376604c189a114374776475c25a31d57be47b29de6a",
+      "name": "referencing",
+      "requires_python": ">=3.10",
+      "roles": [
+        "transitive"
+      ],
+      "version": "0.37.0"
+    },
+    {
+      "active_requirements": [],
+      "dependencies": [],
+      "metadata_sha256": "1bc561b7215de8649cb5ecde1885d9d448b27f5341245844c33b4a0e38313be5",
+      "name": "rpds-py",
+      "requires_python": ">=3.11",
+      "roles": [
+        "transitive"
+      ],
+      "version": "2026.5.1"
+    },
+    {
+      "active_requirements": [
+        "imageio!=2.35.0,>=2.33",
+        "lazy-loader>=0.4",
+        "networkx>=3.0",
+        "numpy>=1.24",
+        "packaging>=21",
+        "pillow>=10.1",
+        "scipy>=1.11.4",
+        "tifffile>=2022.8.12"
+      ],
+      "dependencies": [
+        "imageio",
+        "lazy-loader",
+        "networkx",
+        "numpy",
+        "packaging",
+        "pillow",
+        "scipy",
+        "tifffile"
+      ],
+      "metadata_sha256": "cf5dcb3e5b9a815b4327c02225afcd85edd56b90fbbddde5be944352a5986571",
+      "name": "scikit-image",
+      "requires_python": ">=3.11",
+      "roles": [
+        "runtime"
+      ],
+      "version": "0.26.0"
+    },
+    {
+      "active_requirements": [
+        "joblib>=1.3.0",
+        "numpy>=1.24.1",
+        "scipy>=1.10.0",
+        "threadpoolctl>=3.2.0"
+      ],
+      "dependencies": [
+        "joblib",
+        "numpy",
+        "scipy",
+        "threadpoolctl"
+      ],
+      "metadata_sha256": "95a8f42f4170fc940a71fedfed4fd9353723eb44126130a971a072fe5305d967",
+      "name": "scikit-learn",
+      "requires_python": ">=3.11",
+      "roles": [
+        "runtime"
+      ],
+      "version": "1.8.0"
+    },
+    {
+      "active_requirements": [
+        "numpy<2.7,>=1.26.4"
+      ],
+      "dependencies": [
+        "numpy"
+      ],
+      "metadata_sha256": "6a5fbbbd6ccb4bedd34782730dd78cb840429a82e2f69e55390af1b51bf7999b",
+      "name": "scipy",
+      "requires_python": ">=3.11",
+      "roles": [
+        "runtime"
+      ],
+      "version": "1.17.0"
+    },
+    {
+      "active_requirements": [],
+      "dependencies": [],
+      "metadata_sha256": "75683f40e1121ebccbbca4d679ae2dbf8a0be0ba91531df285b28abe927a43f8",
+      "name": "setuptools",
+      "requires_python": ">=3.9",
+      "roles": [
+        "build"
+      ],
+      "version": "82.0.1"
+    },
+    {
+      "active_requirements": [],
+      "dependencies": [],
+      "metadata_sha256": "562042078c2752549f6d8a7c86dbc5dd708088a7be6d80672ec7b07100b72468",
+      "name": "six",
+      "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*",
+      "roles": [
+        "transitive"
+      ],
+      "version": "1.17.0"
+    },
+    {
+      "active_requirements": [],
+      "dependencies": [],
+      "metadata_sha256": "a45df8d07ea1883d772183a501d7d526076aa70dfcfddb276a2cbdc04def5341",
+      "name": "threadpoolctl",
+      "requires_python": ">=3.9",
+      "roles": [
+        "transitive"
+      ],
+      "version": "3.6.0"
+    },
+    {
+      "active_requirements": [
+        "numpy>=2.1"
+      ],
+      "dependencies": [
+        "numpy"
+      ],
+      "metadata_sha256": "e1f5577ed6536fdfda89a49244291152bb9fb35a2cbba9b3560b7f8765188b37",
+      "name": "tifffile",
+      "requires_python": ">=3.12",
+      "roles": [
+        "transitive"
+      ],
+      "version": "2026.5.15"
+    },
+    {
+      "active_requirements": [],
+      "dependencies": [],
+      "metadata_sha256": "1f197d996db42bf40a79d3578084963f6204506dfee9809af81586dbb9607061",
+      "name": "tzdata",
+      "requires_python": ">=2",
+      "roles": [
+        "transitive"
+      ],
+      "version": "2026.2"
+    }
+  ],
+  "project_requires_python": ">=3.11",
+  "project_version": "1.0.0",
+  "requirements_lock": {
+    "hash_policy": "exact versions plus installed METADATA SHA-256 values",
+    "package_count": 32,
+    "path": "requirements-lock.txt",
+    "sha256": "89b7c65aa003d27fc152c5f00960928aa1cd3f7487a7a833684ad47c09bef7f5"
+  },
+  "runtime_libraries": {
+    "numpy": {
+      "blas_configuration": "OpenBLAS 0.3.30  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64",
+      "blas_name": "scipy-openblas",
+      "blas_version": "0.3.30",
+      "simd_baseline": [
+        "SSE",
+        "SSE2",
+        "SSE3"
+      ],
+      "simd_found": [
+        "SSSE3",
+        "SSE41",
+        "POPCNT",
+        "SSE42",
+        "AVX",
+        "F16C",
+        "FMA3",
+        "AVX2",
+        "AVX512F",
+        "AVX512CD",
+        "AVX512_SKX",
+        "AVX512_CLX",
+        "AVX512_CNL",
+        "AVX512_ICL"
+      ]
+    },
+    "openssl": "OpenSSL 3.5.5 27 Jan 2026"
+  },
+  "schema_version": 1,
+  "validated_interpreter": {
+    "byteorder": "little",
+    "cache_tag": "cpython-313",
+    "implementation": "CPython",
+    "major_minor": "3.13",
+    "pointer_bits": 64,
+    "python_compiler": "GCC 14.2.0",
+    "version": "3.13.5"
+  },
+  "validated_platform": {
+    "libc_family": "glibc",
+    "libc_version": "2.41",
+    "machine": "x86_64",
+    "sysconfig_platform": "linux-x86_64",
+    "system": "Linux"
+  }
+}

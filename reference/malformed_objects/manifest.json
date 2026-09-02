@@ -1,0 +1,430 @@
+{
+  "base_object": {
+    "method_id": "B20_full_aead_explicit_preview",
+    "object_bytes": 1953,
+    "path": "reference/known_answers/objects/B20_full_aead_explicit_preview.qsb",
+    "sha256": "5803bb6fa2dd695de7a7d2209622f654518512db4d5c0e29afa4d4c3c069d3c0"
+  },
+  "case_count": 33,
+  "case_order_sha256": "a1d26d9a2d9a833896f8afe21752d07572baabb938daf93dc03fb824e9d049ab",
+  "cases": [
+    {
+      "case_id": "empty_object",
+      "category": "fixed_prefix",
+      "description": "zero-byte object",
+      "expected_error_code": "truncated_prefix",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 0,
+      "object_path": "reference/malformed_objects/vectors/01_empty_object.qsb",
+      "ordinal": 1,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case_id": "truncated_fixed_prefix",
+      "category": "fixed_prefix",
+      "description": "eight-byte prefix fragment",
+      "expected_error_code": "truncated_prefix",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 8,
+      "object_path": "reference/malformed_objects/vectors/02_truncated_fixed_prefix.qsb",
+      "ordinal": 2,
+      "sha256": "8286fc757cf201b8294ecffa98aa1f16848e95b0897fd028ef4862e312353f4f"
+    },
+    {
+      "case_id": "invalid_magic",
+      "category": "fixed_prefix",
+      "description": "invalid four-byte magic",
+      "expected_error_code": "invalid_magic",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1953,
+      "object_path": "reference/malformed_objects/vectors/03_invalid_magic.qsb",
+      "ordinal": 3,
+      "sha256": "4c890b7001d37c7a881edf86a6353b2a9eaaa5520f11685013502bc954dae040"
+    },
+    {
+      "case_id": "unsupported_version",
+      "category": "fixed_prefix",
+      "description": "unsupported format version",
+      "expected_error_code": "unsupported_version",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1953,
+      "object_path": "reference/malformed_objects/vectors/04_unsupported_version.qsb",
+      "ordinal": 4,
+      "sha256": "c1cba887d32ea1b8755a8a8da1011264d5a32eecda3390e4d87bc66dc7292b06"
+    },
+    {
+      "case_id": "zero_header_length",
+      "category": "header_framing",
+      "description": "zero declared header length",
+      "expected_error_code": "invalid_header_length",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1953,
+      "object_path": "reference/malformed_objects/vectors/05_zero_header_length.qsb",
+      "ordinal": 5,
+      "sha256": "7bce7601ba5eda8a591826b31f3da3178f3fc03e51b5d738415faf297d50c7d8"
+    },
+    {
+      "case_id": "oversized_header_length",
+      "category": "header_framing",
+      "description": "declared header exceeds the parser maximum",
+      "expected_error_code": "invalid_header_length",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1953,
+      "object_path": "reference/malformed_objects/vectors/06_oversized_header_length.qsb",
+      "ordinal": 6,
+      "sha256": "c61ef13643b3dc7ee4af9199526605f92902a40240e8ef714956928300ad27a9"
+    },
+    {
+      "case_id": "declared_header_beyond_object",
+      "category": "header_framing",
+      "description": "declared header extends beyond available bytes",
+      "expected_error_code": "invalid_header_length",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1953,
+      "object_path": "reference/malformed_objects/vectors/07_declared_header_beyond_object.qsb",
+      "ordinal": 7,
+      "sha256": "967f9c3d937ba234fcd1a57fceb2378e604f40cc524cd541deafdc84b4ef4a4c"
+    },
+    {
+      "case_id": "invalid_header_encoding",
+      "category": "header_json",
+      "description": "header contains a non-ASCII byte",
+      "expected_error_code": "invalid_header_encoding",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1953,
+      "object_path": "reference/malformed_objects/vectors/08_invalid_header_encoding.qsb",
+      "ordinal": 8,
+      "sha256": "3341798e1c5bf4dd565efd72010c3bd7a7b7ff3ec6ba48957e3874eeab3de3ec"
+    },
+    {
+      "case_id": "malformed_header_json",
+      "category": "header_json",
+      "description": "header is not valid JSON",
+      "expected_error_code": "invalid_header_json",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1952,
+      "object_path": "reference/malformed_objects/vectors/09_malformed_header_json.qsb",
+      "ordinal": 9,
+      "sha256": "f32d47773a2bc28ad31509834eb781c314ca79ead9d017b19fe08cfb4903dc00"
+    },
+    {
+      "case_id": "nonfinite_header_json",
+      "category": "header_json",
+      "description": "header contains a non-finite JSON constant",
+      "expected_error_code": "invalid_header_json",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1955,
+      "object_path": "reference/malformed_objects/vectors/10_nonfinite_header_json.qsb",
+      "ordinal": 10,
+      "sha256": "023c5b0ee5e944781f5025e16380bdf8af3c5c3cbd7c38004234d22221d82678"
+    },
+    {
+      "case_id": "header_json_array",
+      "category": "header_semantics",
+      "description": "top-level header is a JSON array",
+      "expected_error_code": "invalid_header_fields",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1562,
+      "object_path": "reference/malformed_objects/vectors/11_header_json_array.qsb",
+      "ordinal": 11,
+      "sha256": "b46d32a5fc05a8fb0c9672c54f397fb2ee46cf6180fff95b4abf2088959e457c"
+    },
+    {
+      "case_id": "duplicate_header_field",
+      "category": "header_json",
+      "description": "header repeats method_id",
+      "expected_error_code": "duplicate_header_field",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1977,
+      "object_path": "reference/malformed_objects/vectors/12_duplicate_header_field.qsb",
+      "ordinal": 12,
+      "sha256": "acfcbe7cde2e91a4c9f39efa6474466afc505144f64a917d745e7005ff79a1e0"
+    },
+    {
+      "case_id": "missing_header_field",
+      "category": "header_semantics",
+      "description": "header omits tag_length",
+      "expected_error_code": "invalid_header_fields",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1937,
+      "object_path": "reference/malformed_objects/vectors/13_missing_header_field.qsb",
+      "ordinal": 13,
+      "sha256": "2f97291c196cd81b2a25acd36c16f913c0e4940674f5ccd664566e748861930c"
+    },
+    {
+      "case_id": "unexpected_header_field",
+      "category": "header_semantics",
+      "description": "header adds an unsupported field",
+      "expected_error_code": "invalid_header_fields",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1968,
+      "object_path": "reference/malformed_objects/vectors/14_unexpected_header_field.qsb",
+      "ordinal": 14,
+      "sha256": "398237a19d4b2736756e2071e2eb7e24dc1d4b2845af9de261a68c6365d7cee7"
+    },
+    {
+      "case_id": "noncanonical_whitespace",
+      "category": "canonical_encoding",
+      "description": "header uses noncanonical whitespace",
+      "expected_error_code": "noncanonical_header_encoding",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 2032,
+      "object_path": "reference/malformed_objects/vectors/15_noncanonical_whitespace.qsb",
+      "ordinal": 15,
+      "sha256": "603c458ac9015f4225e038e51250e1f384020cc0445f96cca2292a6ded38fabf"
+    },
+    {
+      "case_id": "noncanonical_key_order",
+      "category": "canonical_encoding",
+      "description": "header keys are not in canonical order",
+      "expected_error_code": "noncanonical_header_encoding",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1953,
+      "object_path": "reference/malformed_objects/vectors/16_noncanonical_key_order.qsb",
+      "ordinal": 16,
+      "sha256": "e0f768845d44e600d0731321640ff7ecb12bb87f910a413b1dc82ac97c89cf2b"
+    },
+    {
+      "case_id": "empty_method_id",
+      "category": "header_semantics",
+      "description": "method identifier is empty",
+      "expected_error_code": "invalid_method_id",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1923,
+      "object_path": "reference/malformed_objects/vectors/17_empty_method_id.qsb",
+      "ordinal": 17,
+      "sha256": "f37fc8b58e2228bf8dd7aea2ac8102788606cd295a09871ac40bb4d1bf3a7767"
+    },
+    {
+      "case_id": "nonnumeric_method_id",
+      "category": "header_semantics",
+      "description": "method identifier has the wrong JSON type",
+      "expected_error_code": "invalid_method_id",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1923,
+      "object_path": "reference/malformed_objects/vectors/18_nonnumeric_method_id.qsb",
+      "ordinal": 18,
+      "sha256": "5726b62dfa5ca4b8188af35fd0ee9756ceef73a57d36fdc8a3f8352fabd84553"
+    },
+    {
+      "case_id": "whitespace_method_id",
+      "category": "header_semantics",
+      "description": "method identifier contains whitespace",
+      "expected_error_code": "invalid_method_id",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1934,
+      "object_path": "reference/malformed_objects/vectors/19_whitespace_method_id.qsb",
+      "ordinal": 19,
+      "sha256": "f35e999de9f6b518f25278e02f36c115749846d5f77c4c66c7d2a059024b6390"
+    },
+    {
+      "case_id": "descriptor_not_object",
+      "category": "header_semantics",
+      "description": "descriptor is not a JSON object",
+      "expected_error_code": "invalid_descriptor",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1865,
+      "object_path": "reference/malformed_objects/vectors/20_descriptor_not_object.qsb",
+      "ordinal": 20,
+      "sha256": "80a39a3f062f4057a146ac7bd6d799978767dc1b74ea3750b77eacfc57faf7b2"
+    },
+    {
+      "case_id": "metadata_not_object",
+      "category": "header_semantics",
+      "description": "metadata is not a JSON object",
+      "expected_error_code": "invalid_metadata",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1825,
+      "object_path": "reference/malformed_objects/vectors/21_metadata_not_object.qsb",
+      "ordinal": 21,
+      "sha256": "313fc36acd65369f526bca573b7dea70c5eef69e9430502caa354d7ce1922bb6"
+    },
+    {
+      "case_id": "shape_wrong_rank",
+      "category": "header_semantics",
+      "description": "image shape has the wrong rank",
+      "expected_error_code": "invalid_image_shape",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1951,
+      "object_path": "reference/malformed_objects/vectors/22_shape_wrong_rank.qsb",
+      "ordinal": 22,
+      "sha256": "87009ff47847b1f8b9234502cfd9497f9331c935bf6ebdf3f372e91377185e01"
+    },
+    {
+      "case_id": "shape_zero_dimension",
+      "category": "header_semantics",
+      "description": "image shape contains a zero dimension",
+      "expected_error_code": "invalid_image_shape",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1952,
+      "object_path": "reference/malformed_objects/vectors/23_shape_zero_dimension.qsb",
+      "ordinal": 23,
+      "sha256": "d60f4c53697b121c304a11a20572b53af4214d483bc066862265a5952000d9bf"
+    },
+    {
+      "case_id": "shape_boolean_dimension",
+      "category": "header_semantics",
+      "description": "image shape contains a Boolean dimension",
+      "expected_error_code": "invalid_image_shape",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1955,
+      "object_path": "reference/malformed_objects/vectors/24_shape_boolean_dimension.qsb",
+      "ordinal": 24,
+      "sha256": "16fbea5eeb434fb38b7da95a4cfa632b5a8ea80abd8eb4ef1945414f66d97287"
+    },
+    {
+      "case_id": "shape_exceeds_bound",
+      "category": "header_semantics",
+      "description": "image dimension exceeds the parser bound",
+      "expected_error_code": "invalid_image_shape",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1956,
+      "object_path": "reference/malformed_objects/vectors/25_shape_exceeds_bound.qsb",
+      "ordinal": 25,
+      "sha256": "d9796c2d17facbf87cf27b8a6d7225385df101cdc2496cea8de6bf56995347fe"
+    },
+    {
+      "case_id": "negative_nonce_length",
+      "category": "component_lengths",
+      "description": "nonce length is negative",
+      "expected_error_code": "invalid_component_length",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1953,
+      "object_path": "reference/malformed_objects/vectors/26_negative_nonce_length.qsb",
+      "ordinal": 26,
+      "sha256": "3ca8cc48b7d5c029cddf8008e73f381949c98560e5f726d7bfddfb3efdd962f0"
+    },
+    {
+      "case_id": "boolean_tag_length",
+      "category": "component_lengths",
+      "description": "tag length is Boolean",
+      "expected_error_code": "invalid_component_length",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1955,
+      "object_path": "reference/malformed_objects/vectors/27_boolean_tag_length.qsb",
+      "ordinal": 27,
+      "sha256": "7d76745f0feffd704d56b0b7787b0bf817c34ec2b9405c13f27b2422dd76ae2a"
+    },
+    {
+      "case_id": "truncated_nonce",
+      "category": "component_framing",
+      "description": "one nonce byte is removed",
+      "expected_error_code": "envelope_length_mismatch",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1952,
+      "object_path": "reference/malformed_objects/vectors/28_truncated_nonce.qsb",
+      "ordinal": 28,
+      "sha256": "196d59a214437e1bbeb43bc42e6bc073d2c9d6c8d7bb844e6a4eecf13e890c75"
+    },
+    {
+      "case_id": "truncated_public_payload",
+      "category": "component_framing",
+      "description": "one public-payload byte is removed",
+      "expected_error_code": "envelope_length_mismatch",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1952,
+      "object_path": "reference/malformed_objects/vectors/29_truncated_public_payload.qsb",
+      "ordinal": 29,
+      "sha256": "6f929faac46d5ece0bbe3ab6112c4f7e4168fe17fc2a2991fb15f86a3a416fe2"
+    },
+    {
+      "case_id": "truncated_protected_payload",
+      "category": "component_framing",
+      "description": "one protected-payload byte is removed",
+      "expected_error_code": "envelope_length_mismatch",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1952,
+      "object_path": "reference/malformed_objects/vectors/30_truncated_protected_payload.qsb",
+      "ordinal": 30,
+      "sha256": "d7851b1c5959bf1a70fcc4cc5ddd6a6e97218b584dfa535145628f15434416d9"
+    },
+    {
+      "case_id": "truncated_tag",
+      "category": "component_framing",
+      "description": "one tag byte is removed",
+      "expected_error_code": "envelope_length_mismatch",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1952,
+      "object_path": "reference/malformed_objects/vectors/31_truncated_tag.qsb",
+      "ordinal": 31,
+      "sha256": "625fdd7e788dd67db582d19d5b029c91584a8e63e761eab9f47c88c6ccd15ee4"
+    },
+    {
+      "case_id": "trailing_byte",
+      "category": "component_framing",
+      "description": "one trailing byte is appended",
+      "expected_error_code": "envelope_length_mismatch",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 1954,
+      "object_path": "reference/malformed_objects/vectors/32_trailing_byte.qsb",
+      "ordinal": 32,
+      "sha256": "c5270e7db2399a83ed912f2cfa1ac7250203177abeb8c6b854a85b4942b5f712"
+    },
+    {
+      "case_id": "missing_all_components",
+      "category": "component_framing",
+      "description": "all declared components are absent",
+      "expected_error_code": "envelope_length_mismatch",
+      "expected_exception_class": "EnvelopeFormatError",
+      "object_bytes": 402,
+      "object_path": "reference/malformed_objects/vectors/33_missing_all_components.qsb",
+      "ordinal": 33,
+      "sha256": "17d56fe6e6e074a50c6c63630563a88d65967858bcc956d694c819680af64c7a"
+    }
+  ],
+  "manifest_id": "QSA-MALFORMED-OBJECT-MANIFEST-V1",
+  "parser_contract": {
+    "format_magic_ascii": "QSB1",
+    "format_version": 1,
+    "rejection_type": "EnvelopeFormatError",
+    "stable_error_codes": [
+      "duplicate_header_field",
+      "envelope_length_mismatch",
+      "invalid_component_length",
+      "invalid_descriptor",
+      "invalid_header_encoding",
+      "invalid_header_fields",
+      "invalid_header_json",
+      "invalid_header_length",
+      "invalid_image_shape",
+      "invalid_magic",
+      "invalid_metadata",
+      "invalid_method_id",
+      "noncanonical_header_encoding",
+      "truncated_prefix",
+      "unsupported_version"
+    ]
+  },
+  "schema_version": 1,
+  "source_authorities": [
+    {
+      "path": "pyproject.toml",
+      "sha256": "bdd9d5b71fc4b0e9035dda220d026bf5228b289fa9442601f21785c4308a3804"
+    },
+    {
+      "path": "src/qsa_benchmark/benchmark/envelope.py",
+      "sha256": "9a52e2528e966f367778e56c871754a7c3105b2c05f7a1a1bf83b016bbecf5d9"
+    },
+    {
+      "path": "src/qsa_benchmark/benchmark/models.py",
+      "sha256": "cafd8e4da797e2b082bf3798ce43da0e4c486ed55c7f593cbba13f416fe0df79"
+    },
+    {
+      "path": "src/qsa_benchmark/benchmark/utils.py",
+      "sha256": "4edaacd8cf7030a291a7701dc1c0b6cb2e8c7489dd8261bf9f3c78c8f5b335ff"
+    },
+    {
+      "path": "src/qsa_benchmark/validation/malformed.py",
+      "sha256": "587223b474254b315207f00e4de1eb0d736ca5ab310acfcb4323aa8d2892f398"
+    },
+    {
+      "path": "scripts/generate_reference_assets.py",
+      "sha256": "b10c386d22aab791048c16ec12117ed6229151e5155670b32990294a001c1e76"
+    },
+    {
+      "path": "reference/known_answers/objects/B20_full_aead_explicit_preview.qsb",
+      "sha256": "5803bb6fa2dd695de7a7d2209622f654518512db4d5c0e29afa4d4c3c069d3c0"
+    }
+  ],
+  "vector_set_sha256": "de97711a05901fb74722a41a7dafe57a8beb6ccf9f83bcef76e0235f8a0b6a01"
+}

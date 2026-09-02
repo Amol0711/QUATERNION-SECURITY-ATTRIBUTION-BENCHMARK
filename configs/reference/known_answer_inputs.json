@@ -1,0 +1,67 @@
+{
+  "case_count": 24,
+  "context_profile": {
+    "image_id": "known_answer_input_16x16",
+    "master_key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+    "nonce_domain_ascii": "QSA-KNOWN-ANSWER-NONCE-V1",
+    "protocol_id": "QSA-KNOWN-ANSWER-V1",
+    "public_material_domain_ascii": "QSA-KNOWN-ANSWER-PUBLIC-MATERIAL-V1",
+    "public_metadata": {
+      "benchmark": "QSA-KNOWN-ANSWER-V1",
+      "metadata_profile": "fixed-reference-v1",
+      "object_semantics": "complete-public-object",
+      "schema": 1
+    },
+    "run_id_template": "known-answer|{method_id}",
+    "seed_domain_ascii": "QSA-KNOWN-ANSWER-SEED-V1"
+  },
+  "input": {
+    "byte_length": 768,
+    "dtype": "uint8",
+    "generator_id": "coordinate-mix-v1",
+    "layout": "C-order RGB",
+    "relative_path": "reference/known_answers/input.rgb",
+    "sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+    "shape": [
+      16,
+      16,
+      3
+    ]
+  },
+  "method_order": [
+    "B01_aes_gcm",
+    "B02_chacha20_poly1305",
+    "B03_shake_hmac",
+    "B04_public_high_entropy",
+    "B05_identity",
+    "B06_reversible_color",
+    "B07_pca_klt",
+    "B08_random_so3",
+    "B09_fixed_axis_quaternion",
+    "B10_caseii",
+    "B11_curvature_caseii",
+    "B12_chebyshev_only",
+    "B13_permutation_only",
+    "B14_diffusion_only",
+    "B15_geometry_shake_hmac",
+    "B16_geometry_aes_gcm",
+    "B17_tip_r0_emulation",
+    "B18_external_quaternion_feistel",
+    "B19_external_chaos_pd",
+    "B20_full_aead_explicit_preview",
+    "B21_public_fresh_pad",
+    "B22_public_wideblock_prp",
+    "B23_secure_fixed_header",
+    "B24_aes_gcm_siv"
+  ],
+  "method_profile": "extended",
+  "object_format": {
+    "magic_ascii": "QSB1",
+    "version": 1
+  },
+  "operational_use_prohibited": true,
+  "public_test_values": true,
+  "reference_set_id": "QSA-KNOWN-ANSWER-SET-V1",
+  "schema_id": "urn:qsa:schema:known-answer-inputs:v1",
+  "schema_version": 1
+}

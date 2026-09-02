@@ -1,0 +1,168 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "b13_query_tightness": {
+      "additionalProperties": false,
+      "properties": {
+        "alphabet_size": {
+          "const": 256
+        },
+        "context_repetitions": {
+          "minimum": 2,
+          "type": "integer"
+        },
+        "image_id": {
+          "type": "string"
+        },
+        "method_id": {
+          "const": "B13_permutation_only"
+        },
+        "probe_encoding": {
+          "type": "string"
+        },
+        "query_regimes": {
+          "const": [
+            "k_star_minus_one",
+            "k_star"
+          ]
+        },
+        "required_outputs": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 4,
+          "type": "array"
+        },
+        "sizes": {
+          "const": [
+            96,
+            256,
+            512
+          ]
+        }
+      },
+      "required": [
+        "method_id",
+        "alphabet_size",
+        "image_id",
+        "sizes",
+        "context_repetitions",
+        "query_regimes",
+        "probe_encoding",
+        "required_outputs"
+      ],
+      "type": "object"
+    },
+    "b23_npcr_power": {
+      "additionalProperties": false,
+      "properties": {
+        "alphabet_size": {
+          "const": 256
+        },
+        "alternative_model": {
+          "type": "string"
+        },
+        "expected_holm_family_sizes": {
+          "type": "object"
+        },
+        "fixed_equal_coordinates": {
+          "const": 32
+        },
+        "method_id": {
+          "const": "B23_secure_fixed_header"
+        },
+        "multiplicity_calibration": {
+          "type": "string"
+        },
+        "observed_comparison": {
+          "type": "string"
+        },
+        "primary_familywise_alpha": {
+          "const": 0.01
+        },
+        "projection_id": {
+          "const": "aggregate_full_body"
+        },
+        "protocol": {
+          "const": "P2_fresh_randomness"
+        },
+        "sizes": {
+          "const": [
+            256,
+            512
+          ]
+        },
+        "suffix_projection_id": {
+          "const": "aggregate_cryptographic_suffix"
+        }
+      },
+      "required": [
+        "method_id",
+        "protocol",
+        "projection_id",
+        "suffix_projection_id",
+        "alphabet_size",
+        "fixed_equal_coordinates",
+        "primary_familywise_alpha",
+        "sizes",
+        "expected_holm_family_sizes",
+        "alternative_model",
+        "multiplicity_calibration",
+        "observed_comparison"
+      ],
+      "type": "object"
+    },
+    "parent_protocol_id": {
+      "const": "QSA-PROTOCOL-V1"
+    },
+    "parent_protocol_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "protocol_id": {
+      "const": "QSA-TARGETED-VALIDATION-V1"
+    },
+    "replication_policy": {
+      "additionalProperties": false,
+      "properties": {
+        "deterministic_artifacts_require_exact_canonical_match": {
+          "const": true
+        },
+        "run_label_excluded_from_serialized_objects": {
+          "const": true
+        },
+        "runs": {
+          "const": [
+            "primary_execution",
+            "independent_execution"
+          ]
+        },
+        "same_scientific_schedule": {
+          "const": true
+        }
+      },
+      "required": [
+        "runs",
+        "same_scientific_schedule",
+        "run_label_excluded_from_serialized_objects",
+        "deterministic_artifacts_require_exact_canonical_match"
+      ],
+      "type": "object"
+    },
+    "scope": {
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "protocol_id",
+    "parent_protocol_id",
+    "parent_protocol_sha256",
+    "scope",
+    "b13_query_tightness",
+    "b23_npcr_power",
+    "replication_policy"
+  ],
+  "type": "object"
+}

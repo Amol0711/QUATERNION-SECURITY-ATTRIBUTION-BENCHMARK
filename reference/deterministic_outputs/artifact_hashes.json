@@ -1,0 +1,345 @@
+{
+  "artifact_count": 37,
+  "artifact_set_sha256": "91d79798fdcde6108eae760ecd91305540c6651b1aca4c75b1f335861242a896",
+  "artifacts": [
+    {
+      "artifact_class": "table",
+      "comparison_rule": "canonical string-valued rows sorted by canonical JSON",
+      "comparison_sha256": "5459d5e831743583a76ade42ef3475c91ea2cf55f16a79a56b253b8e713f73f7",
+      "ordinal": 1,
+      "path": "differential_pair_records.csv",
+      "raw_sha256": "6aecefa47a19b85364ceaa8a69734903b9b30d750c9c66e12bd68fcad219b0f8",
+      "row_count": 36768
+    },
+    {
+      "artifact_class": "table",
+      "comparison_rule": "canonical string-valued rows sorted by canonical JSON",
+      "comparison_sha256": "b3d96560d378157e73b444e59d64f5873a11d4be669c4536872a159da87462d3",
+      "ordinal": 2,
+      "path": "differential_projection_records.csv",
+      "raw_sha256": "91a73af78c52399a8855ff1d9c200874990a2b877f9b0807e977fb7b47cb44b4",
+      "row_count": 99072
+    },
+    {
+      "artifact_class": "table",
+      "comparison_rule": "canonical string-valued rows sorted by canonical JSON",
+      "comparison_sha256": "92f61d0bf7f7c42da7a5cf23c98213d44cf474ae9c81a943e0fe601da526a96a",
+      "ordinal": 3,
+      "path": "differential_summary.csv",
+      "raw_sha256": "a909789de931bfa05f1766f325868803e65c1c764e46a5162369b853fa5b928e",
+      "row_count": 346
+    },
+    {
+      "artifact_class": "table",
+      "comparison_rule": "canonical string-valued rows sorted by canonical JSON",
+      "comparison_sha256": "4b21d8b267c47894a7192797a30df4631d08d6f727a89d33064a9db6c932d6c0",
+      "ordinal": 4,
+      "path": "leakage_from_object_records.csv",
+      "raw_sha256": "4d2363a5ee9bc73d6754307a8278440e4cace9d1db602cab04e538878a42498e",
+      "row_count": 1152
+    },
+    {
+      "artifact_class": "table",
+      "comparison_rule": "canonical string-valued rows sorted by canonical JSON",
+      "comparison_sha256": "ec75875bf57530b510220357d5c3df0008967cc48c6f23777ffcd53bc162da7e",
+      "ordinal": 5,
+      "path": "leakage_from_object_summary.csv",
+      "raw_sha256": "adf84a737d6fd719c9ba38eb13f956dc23daaaf170a33821e1bd6b040aec0434",
+      "row_count": 24
+    },
+    {
+      "artifact_class": "table",
+      "comparison_rule": "canonical string-valued rows sorted by canonical JSON",
+      "comparison_sha256": "079f8915828fa62672bdf89044b8a0806c00de13936a60a56bfc7f988848a3ca",
+      "ordinal": 6,
+      "path": "representative_object_manifest.csv",
+      "raw_sha256": "1f3cf71ec6f7a3e70941e26c9a6fbc2427fb267c598cb86084eff974a6fa89f2",
+      "row_count": 24
+    },
+    {
+      "artifact_class": "table",
+      "comparison_rule": "canonical string-valued rows sorted by canonical JSON",
+      "comparison_sha256": "af26b5f63fc7f8958cf30c39ff9183845a280a1917b71a827bba332f6e8d9cb8",
+      "ordinal": 7,
+      "path": "active_tamper_records.csv",
+      "raw_sha256": "5aacf88a8eae5549cb240e4008f04f56ab6be2a0b8f866e6b34a1816c0c9a9e1",
+      "row_count": 180
+    },
+    {
+      "artifact_class": "table",
+      "comparison_rule": "canonical string-valued rows sorted by canonical JSON",
+      "comparison_sha256": "2bee3009e84e5c71102e7c24e90a90407759a78aa02064568f9719ec8da1dcd5",
+      "ordinal": 8,
+      "path": "forced_reuse_records.csv",
+      "raw_sha256": "a7e0f4b092b73b6f9aed70b055e99ee3cfaadccfc28c9a6366eba4bf8600ea3e",
+      "row_count": 24
+    },
+    {
+      "artifact_class": "table",
+      "comparison_rule": "canonical string-valued rows sorted by canonical JSON",
+      "comparison_sha256": "2e821777695af56f2c39b488e92dc327078961687870b9597741e277f8daeadb",
+      "ordinal": 9,
+      "path": "structured_recovery_records.csv",
+      "raw_sha256": "8e66db2a04e9a3a2948881e202893e4dcf476b8733277f0a186949aa79ac1d47",
+      "row_count": 3
+    },
+    {
+      "artifact_class": "table",
+      "comparison_rule": "canonical string-valued rows sorted by canonical JSON",
+      "comparison_sha256": "eb9af21951e9594db9ef81520d05d24ecd3fcfa22fd81c044cbca861ce3c0a27",
+      "ordinal": 10,
+      "path": "learning_object_manifest.csv",
+      "raw_sha256": "fe12e187b91dac84755da02bba5f862c42abe9b8bacc23b90cdc28bbd5426142",
+      "row_count": 576
+    },
+    {
+      "artifact_class": "table",
+      "comparison_rule": "canonical string-valued rows sorted by canonical JSON",
+      "comparison_sha256": "0297afe9529eff05a4766228824d63acc44fd52c361ce40a3f29589479298e94",
+      "ordinal": 11,
+      "path": "learned_reconstruction_records.csv",
+      "raw_sha256": "2a1905c8833bbb67ad4f584962fa3b1777b47dece00ba2f4e823bab98ef4632b",
+      "row_count": 144
+    },
+    {
+      "artifact_class": "table",
+      "comparison_rule": "canonical string-valued rows sorted by canonical JSON",
+      "comparison_sha256": "389999b486dfa1c60011141a3911e604ff147efef4b9c848a9c2509b9e08b516",
+      "ordinal": 12,
+      "path": "protected_body_distinguishing_records.csv",
+      "raw_sha256": "46bb5234f183da60bea2f98369d4ac4d64d10a08f7142e8e9a7a3cb509903981",
+      "row_count": 24
+    },
+    {
+      "artifact_class": "table",
+      "comparison_rule": "canonical string-valued rows sorted by canonical JSON",
+      "comparison_sha256": "654b62670a032d426c466b36e16e4b480b0480bd7d7279150b2f19feaf1dcf04",
+      "ordinal": 13,
+      "path": "attack_leakage_regime_matrix.csv",
+      "raw_sha256": "396bb4a40b0babeaff7d1327dec59d4288accc80e9e3e51b4efcc22025787188",
+      "row_count": 24
+    },
+    {
+      "artifact_class": "representative_object",
+      "comparison_rule": "exact bytes",
+      "comparison_sha256": "00505845f2e896e247923088dd5dc1cefa3696092bd1a7fccb3277ba085a5695",
+      "method_id": "B01_aes_gcm",
+      "ordinal": 14,
+      "path": "attack_objects/B01_aes_gcm.qsb",
+      "raw_sha256": "00505845f2e896e247923088dd5dc1cefa3696092bd1a7fccb3277ba085a5695"
+    },
+    {
+      "artifact_class": "representative_object",
+      "comparison_rule": "exact bytes",
+      "comparison_sha256": "26c4c3eb60e9e701014d2d2408fe6279f6f256294f729b6193bfde518a9d206a",
+      "method_id": "B02_chacha20_poly1305",
+      "ordinal": 15,
+      "path": "attack_objects/B02_chacha20_poly1305.qsb",
+      "raw_sha256": "26c4c3eb60e9e701014d2d2408fe6279f6f256294f729b6193bfde518a9d206a"
+    },
+    {
+      "artifact_class": "representative_object",
+      "comparison_rule": "exact bytes",
+      "comparison_sha256": "97ca1432e20a0f54904334953dcda6a4370ab9de3e1e31c1c2a7885516f30f19",
+      "method_id": "B03_shake_hmac",
+      "ordinal": 16,
+      "path": "attack_objects/B03_shake_hmac.qsb",
+      "raw_sha256": "97ca1432e20a0f54904334953dcda6a4370ab9de3e1e31c1c2a7885516f30f19"
+    },
+    {
+      "artifact_class": "representative_object",
+      "comparison_rule": "exact bytes",
+      "comparison_sha256": "e59c98863b33c8ad02275b6318700498114890ebac3cfbf251eda11db586ca76",
+      "method_id": "B04_public_high_entropy",
+      "ordinal": 17,
+      "path": "attack_objects/B04_public_high_entropy.qsb",
+      "raw_sha256": "e59c98863b33c8ad02275b6318700498114890ebac3cfbf251eda11db586ca76"
+    },
+    {
+      "artifact_class": "representative_object",
+      "comparison_rule": "exact bytes",
+      "comparison_sha256": "a0da5c764540959ec4f635e5cf6029500727c123467dca24ecd34533ca40f5e9",
+      "method_id": "B05_identity",
+      "ordinal": 18,
+      "path": "attack_objects/B05_identity.qsb",
+      "raw_sha256": "a0da5c764540959ec4f635e5cf6029500727c123467dca24ecd34533ca40f5e9"
+    },
+    {
+      "artifact_class": "representative_object",
+      "comparison_rule": "exact bytes",
+      "comparison_sha256": "4645351d3856a74691729b2a2c77ed9832ecb0695e3dad55713a05975335c220",
+      "method_id": "B06_reversible_color",
+      "ordinal": 19,
+      "path": "attack_objects/B06_reversible_color.qsb",
+      "raw_sha256": "4645351d3856a74691729b2a2c77ed9832ecb0695e3dad55713a05975335c220"
+    },
+    {
+      "artifact_class": "representative_object",
+      "comparison_rule": "exact bytes",
+      "comparison_sha256": "6ec9abf3168f9233a4dcc90d5c24ce47e5da8cbdeb047421601b9e880586d5a8",
+      "method_id": "B07_pca_klt",
+      "ordinal": 20,
+      "path": "attack_objects/B07_pca_klt.qsb",
+      "raw_sha256": "6ec9abf3168f9233a4dcc90d5c24ce47e5da8cbdeb047421601b9e880586d5a8"
+    },
+    {
+      "artifact_class": "representative_object",
+      "comparison_rule": "exact bytes",
+      "comparison_sha256": "486c1f6a78a27d976082d53c90e50972b542ab93849f168e40e5e993006a11ba",
+      "method_id": "B08_random_so3",
+      "ordinal": 21,
+      "path": "attack_objects/B08_random_so3.qsb",
+      "raw_sha256": "486c1f6a78a27d976082d53c90e50972b542ab93849f168e40e5e993006a11ba"
+    },
+    {
+      "artifact_class": "representative_object",
+      "comparison_rule": "exact bytes",
+      "comparison_sha256": "820e7fb5a801b1fd3b4a7d347ddabc43eddc1c58917f937eadc7bb0b5a1b446b",
+      "method_id": "B09_fixed_axis_quaternion",
+      "ordinal": 22,
+      "path": "attack_objects/B09_fixed_axis_quaternion.qsb",
+      "raw_sha256": "820e7fb5a801b1fd3b4a7d347ddabc43eddc1c58917f937eadc7bb0b5a1b446b"
+    },
+    {
+      "artifact_class": "representative_object",
+      "comparison_rule": "exact bytes",
+      "comparison_sha256": "a2284c3123cb2265ae5461c8fbce28bfd5fd28bfe77c17bcb8d52557a733032a",
+      "method_id": "B10_caseii",
+      "ordinal": 23,
+      "path": "attack_objects/B10_caseii.qsb",
+      "raw_sha256": "a2284c3123cb2265ae5461c8fbce28bfd5fd28bfe77c17bcb8d52557a733032a"
+    },
+    {
+      "artifact_class": "representative_object",
+      "comparison_rule": "exact bytes",
+      "comparison_sha256": "bf15e1ae866e1d81f65562d5899f1932a0157225716f3c84b5746119b217febb",
+      "method_id": "B11_curvature_caseii",
+      "ordinal": 24,
+      "path": "attack_objects/B11_curvature_caseii.qsb",
+      "raw_sha256": "bf15e1ae866e1d81f65562d5899f1932a0157225716f3c84b5746119b217febb"
+    },
+    {
+      "artifact_class": "representative_object",
+      "comparison_rule": "exact bytes",
+      "comparison_sha256": "bc109bb0554710dd8b104a4310d756912c0affbfc0403d3bd8d4eb8935ccd9b5",
+      "method_id": "B12_chebyshev_only",
+      "ordinal": 25,
+      "path": "attack_objects/B12_chebyshev_only.qsb",
+      "raw_sha256": "bc109bb0554710dd8b104a4310d756912c0affbfc0403d3bd8d4eb8935ccd9b5"
+    },
+    {
+      "artifact_class": "representative_object",
+      "comparison_rule": "exact bytes",
+      "comparison_sha256": "fccac8ce52a1795cc0f2cbaaf39f1bf1e894932d91bbd9b1ec63d275fcbb244d",
+      "method_id": "B13_permutation_only",
+      "ordinal": 26,
+      "path": "attack_objects/B13_permutation_only.qsb",
+      "raw_sha256": "fccac8ce52a1795cc0f2cbaaf39f1bf1e894932d91bbd9b1ec63d275fcbb244d"
+    },
+    {
+      "artifact_class": "representative_object",
+      "comparison_rule": "exact bytes",
+      "comparison_sha256": "58b79240a2b4e8e4809300693473569032cfd79618c969712a207bf69343a527",
+      "method_id": "B14_diffusion_only",
+      "ordinal": 27,
+      "path": "attack_objects/B14_diffusion_only.qsb",
+      "raw_sha256": "58b79240a2b4e8e4809300693473569032cfd79618c969712a207bf69343a527"
+    },
+    {
+      "artifact_class": "representative_object",
+      "comparison_rule": "exact bytes",
+      "comparison_sha256": "d9f5104286162db329759531f9d53c8d1fab4286c23af48b45809fa376cdc1a0",
+      "method_id": "B15_geometry_shake_hmac",
+      "ordinal": 28,
+      "path": "attack_objects/B15_geometry_shake_hmac.qsb",
+      "raw_sha256": "d9f5104286162db329759531f9d53c8d1fab4286c23af48b45809fa376cdc1a0"
+    },
+    {
+      "artifact_class": "representative_object",
+      "comparison_rule": "exact bytes",
+      "comparison_sha256": "ecfe92e34f032690d6b6c56ce93ca9a7c59d55732099c1b712a8bb73425c9608",
+      "method_id": "B16_geometry_aes_gcm",
+      "ordinal": 29,
+      "path": "attack_objects/B16_geometry_aes_gcm.qsb",
+      "raw_sha256": "ecfe92e34f032690d6b6c56ce93ca9a7c59d55732099c1b712a8bb73425c9608"
+    },
+    {
+      "artifact_class": "representative_object",
+      "comparison_rule": "exact bytes",
+      "comparison_sha256": "cdc5f96ad1864bc8e7edffee66ae42f1bae353067d992a3d82409ad9364b4b32",
+      "method_id": "B17_tip_r0_emulation",
+      "ordinal": 30,
+      "path": "attack_objects/B17_tip_r0_emulation.qsb",
+      "raw_sha256": "cdc5f96ad1864bc8e7edffee66ae42f1bae353067d992a3d82409ad9364b4b32"
+    },
+    {
+      "artifact_class": "representative_object",
+      "comparison_rule": "exact bytes",
+      "comparison_sha256": "8c6157bf2188bc1324a109bbe7c29c1b8d045946be6e5337e0dcc076ff286349",
+      "method_id": "B18_external_quaternion_feistel",
+      "ordinal": 31,
+      "path": "attack_objects/B18_external_quaternion_feistel.qsb",
+      "raw_sha256": "8c6157bf2188bc1324a109bbe7c29c1b8d045946be6e5337e0dcc076ff286349"
+    },
+    {
+      "artifact_class": "representative_object",
+      "comparison_rule": "exact bytes",
+      "comparison_sha256": "c66d10b5a5385f93e34b9fcaa9d9b6fb3764bafb0d87b84dd5ed1e6eb35ca38d",
+      "method_id": "B19_external_chaos_pd",
+      "ordinal": 32,
+      "path": "attack_objects/B19_external_chaos_pd.qsb",
+      "raw_sha256": "c66d10b5a5385f93e34b9fcaa9d9b6fb3764bafb0d87b84dd5ed1e6eb35ca38d"
+    },
+    {
+      "artifact_class": "representative_object",
+      "comparison_rule": "exact bytes",
+      "comparison_sha256": "360d492d9fa89104a2a0384264a86df723367bac1892d2e7fa6eda8303f6d63d",
+      "method_id": "B20_full_aead_explicit_preview",
+      "ordinal": 33,
+      "path": "attack_objects/B20_full_aead_explicit_preview.qsb",
+      "raw_sha256": "360d492d9fa89104a2a0384264a86df723367bac1892d2e7fa6eda8303f6d63d"
+    },
+    {
+      "artifact_class": "representative_object",
+      "comparison_rule": "exact bytes",
+      "comparison_sha256": "4b606629ce4d7dd42ef3f526a4fc1ff9b214c84ae44e25e7d3977109815d4f9e",
+      "method_id": "B21_public_fresh_pad",
+      "ordinal": 34,
+      "path": "attack_objects/B21_public_fresh_pad.qsb",
+      "raw_sha256": "4b606629ce4d7dd42ef3f526a4fc1ff9b214c84ae44e25e7d3977109815d4f9e"
+    },
+    {
+      "artifact_class": "representative_object",
+      "comparison_rule": "exact bytes",
+      "comparison_sha256": "df5ecbf1661395f32049011f8f987237200cd09ec7fa15af575b7458c5e6eb81",
+      "method_id": "B22_public_wideblock_prp",
+      "ordinal": 35,
+      "path": "attack_objects/B22_public_wideblock_prp.qsb",
+      "raw_sha256": "df5ecbf1661395f32049011f8f987237200cd09ec7fa15af575b7458c5e6eb81"
+    },
+    {
+      "artifact_class": "representative_object",
+      "comparison_rule": "exact bytes",
+      "comparison_sha256": "9ac2b85f418ac2313ee8b661796f49145da39aa525c7146469381fd51f5f80b9",
+      "method_id": "B23_secure_fixed_header",
+      "ordinal": 36,
+      "path": "attack_objects/B23_secure_fixed_header.qsb",
+      "raw_sha256": "9ac2b85f418ac2313ee8b661796f49145da39aa525c7146469381fd51f5f80b9"
+    },
+    {
+      "artifact_class": "representative_object",
+      "comparison_rule": "exact bytes",
+      "comparison_sha256": "49c87e1f81d53933dc2b83c0d556699409d53e26b43ad03efd2ddc9a04e41162",
+      "method_id": "B24_aes_gcm_siv",
+      "ordinal": 37,
+      "path": "attack_objects/B24_aes_gcm_siv.qsb",
+      "raw_sha256": "49c87e1f81d53933dc2b83c0d556699409d53e26b43ad03efd2ddc9a04e41162"
+    }
+  ],
+  "manifest_id": "QSA-DETERMINISTIC-ARTIFACT-HASHES-V1",
+  "protocol_id": "QSA-PROTOCOL-V1",
+  "protocol_sha256": "72314ad1e610975c8c90c45bec3d7b65d64f98945baf77d93555ff035f1647c5",
+  "representative_object_count": 24,
+  "schema_version": 1,
+  "table_count": 13
+}

@@ -1,0 +1,272 @@
+{
+  "artifact_set_sha256": "91d79798fdcde6108eae760ecd91305540c6651b1aca4c75b1f335861242a896",
+  "artifacts": [
+    {
+      "artifact_class": "table",
+      "method_id": null,
+      "ordinal": 1,
+      "path": "differential_pair_records.csv",
+      "row_count": 36768
+    },
+    {
+      "artifact_class": "table",
+      "method_id": null,
+      "ordinal": 2,
+      "path": "differential_projection_records.csv",
+      "row_count": 99072
+    },
+    {
+      "artifact_class": "table",
+      "method_id": null,
+      "ordinal": 3,
+      "path": "differential_summary.csv",
+      "row_count": 346
+    },
+    {
+      "artifact_class": "table",
+      "method_id": null,
+      "ordinal": 4,
+      "path": "leakage_from_object_records.csv",
+      "row_count": 1152
+    },
+    {
+      "artifact_class": "table",
+      "method_id": null,
+      "ordinal": 5,
+      "path": "leakage_from_object_summary.csv",
+      "row_count": 24
+    },
+    {
+      "artifact_class": "table",
+      "method_id": null,
+      "ordinal": 6,
+      "path": "representative_object_manifest.csv",
+      "row_count": 24
+    },
+    {
+      "artifact_class": "table",
+      "method_id": null,
+      "ordinal": 7,
+      "path": "active_tamper_records.csv",
+      "row_count": 180
+    },
+    {
+      "artifact_class": "table",
+      "method_id": null,
+      "ordinal": 8,
+      "path": "forced_reuse_records.csv",
+      "row_count": 24
+    },
+    {
+      "artifact_class": "table",
+      "method_id": null,
+      "ordinal": 9,
+      "path": "structured_recovery_records.csv",
+      "row_count": 3
+    },
+    {
+      "artifact_class": "table",
+      "method_id": null,
+      "ordinal": 10,
+      "path": "learning_object_manifest.csv",
+      "row_count": 576
+    },
+    {
+      "artifact_class": "table",
+      "method_id": null,
+      "ordinal": 11,
+      "path": "learned_reconstruction_records.csv",
+      "row_count": 144
+    },
+    {
+      "artifact_class": "table",
+      "method_id": null,
+      "ordinal": 12,
+      "path": "protected_body_distinguishing_records.csv",
+      "row_count": 24
+    },
+    {
+      "artifact_class": "table",
+      "method_id": null,
+      "ordinal": 13,
+      "path": "attack_leakage_regime_matrix.csv",
+      "row_count": 24
+    },
+    {
+      "artifact_class": "representative_object",
+      "method_id": "B01_aes_gcm",
+      "ordinal": 14,
+      "path": "attack_objects/B01_aes_gcm.qsb",
+      "row_count": null
+    },
+    {
+      "artifact_class": "representative_object",
+      "method_id": "B02_chacha20_poly1305",
+      "ordinal": 15,
+      "path": "attack_objects/B02_chacha20_poly1305.qsb",
+      "row_count": null
+    },
+    {
+      "artifact_class": "representative_object",
+      "method_id": "B03_shake_hmac",
+      "ordinal": 16,
+      "path": "attack_objects/B03_shake_hmac.qsb",
+      "row_count": null
+    },
+    {
+      "artifact_class": "representative_object",
+      "method_id": "B04_public_high_entropy",
+      "ordinal": 17,
+      "path": "attack_objects/B04_public_high_entropy.qsb",
+      "row_count": null
+    },
+    {
+      "artifact_class": "representative_object",
+      "method_id": "B05_identity",
+      "ordinal": 18,
+      "path": "attack_objects/B05_identity.qsb",
+      "row_count": null
+    },
+    {
+      "artifact_class": "representative_object",
+      "method_id": "B06_reversible_color",
+      "ordinal": 19,
+      "path": "attack_objects/B06_reversible_color.qsb",
+      "row_count": null
+    },
+    {
+      "artifact_class": "representative_object",
+      "method_id": "B07_pca_klt",
+      "ordinal": 20,
+      "path": "attack_objects/B07_pca_klt.qsb",
+      "row_count": null
+    },
+    {
+      "artifact_class": "representative_object",
+      "method_id": "B08_random_so3",
+      "ordinal": 21,
+      "path": "attack_objects/B08_random_so3.qsb",
+      "row_count": null
+    },
+    {
+      "artifact_class": "representative_object",
+      "method_id": "B09_fixed_axis_quaternion",
+      "ordinal": 22,
+      "path": "attack_objects/B09_fixed_axis_quaternion.qsb",
+      "row_count": null
+    },
+    {
+      "artifact_class": "representative_object",
+      "method_id": "B10_caseii",
+      "ordinal": 23,
+      "path": "attack_objects/B10_caseii.qsb",
+      "row_count": null
+    },
+    {
+      "artifact_class": "representative_object",
+      "method_id": "B11_curvature_caseii",
+      "ordinal": 24,
+      "path": "attack_objects/B11_curvature_caseii.qsb",
+      "row_count": null
+    },
+    {
+      "artifact_class": "representative_object",
+      "method_id": "B12_chebyshev_only",
+      "ordinal": 25,
+      "path": "attack_objects/B12_chebyshev_only.qsb",
+      "row_count": null
+    },
+    {
+      "artifact_class": "representative_object",
+      "method_id": "B13_permutation_only",
+      "ordinal": 26,
+      "path": "attack_objects/B13_permutation_only.qsb",
+      "row_count": null
+    },
+    {
+      "artifact_class": "representative_object",
+      "method_id": "B14_diffusion_only",
+      "ordinal": 27,
+      "path": "attack_objects/B14_diffusion_only.qsb",
+      "row_count": null
+    },
+    {
+      "artifact_class": "representative_object",
+      "method_id": "B15_geometry_shake_hmac",
+      "ordinal": 28,
+      "path": "attack_objects/B15_geometry_shake_hmac.qsb",
+      "row_count": null
+    },
+    {
+      "artifact_class": "representative_object",
+      "method_id": "B16_geometry_aes_gcm",
+      "ordinal": 29,
+      "path": "attack_objects/B16_geometry_aes_gcm.qsb",
+      "row_count": null
+    },
+    {
+      "artifact_class": "representative_object",
+      "method_id": "B17_tip_r0_emulation",
+      "ordinal": 30,
+      "path": "attack_objects/B17_tip_r0_emulation.qsb",
+      "row_count": null
+    },
+    {
+      "artifact_class": "representative_object",
+      "method_id": "B18_external_quaternion_feistel",
+      "ordinal": 31,
+      "path": "attack_objects/B18_external_quaternion_feistel.qsb",
+      "row_count": null
+    },
+    {
+      "artifact_class": "representative_object",
+      "method_id": "B19_external_chaos_pd",
+      "ordinal": 32,
+      "path": "attack_objects/B19_external_chaos_pd.qsb",
+      "row_count": null
+    },
+    {
+      "artifact_class": "representative_object",
+      "method_id": "B20_full_aead_explicit_preview",
+      "ordinal": 33,
+      "path": "attack_objects/B20_full_aead_explicit_preview.qsb",
+      "row_count": null
+    },
+    {
+      "artifact_class": "representative_object",
+      "method_id": "B21_public_fresh_pad",
+      "ordinal": 34,
+      "path": "attack_objects/B21_public_fresh_pad.qsb",
+      "row_count": null
+    },
+    {
+      "artifact_class": "representative_object",
+      "method_id": "B22_public_wideblock_prp",
+      "ordinal": 35,
+      "path": "attack_objects/B22_public_wideblock_prp.qsb",
+      "row_count": null
+    },
+    {
+      "artifact_class": "representative_object",
+      "method_id": "B23_secure_fixed_header",
+      "ordinal": 36,
+      "path": "attack_objects/B23_secure_fixed_header.qsb",
+      "row_count": null
+    },
+    {
+      "artifact_class": "representative_object",
+      "method_id": "B24_aes_gcm_siv",
+      "ordinal": 37,
+      "path": "attack_objects/B24_aes_gcm_siv.qsb",
+      "row_count": null
+    }
+  ],
+  "counts": {
+    "representative_objects": 24,
+    "tables": 13,
+    "total": 37
+  },
+  "inventory_id": "QSA-DETERMINISTIC-ARTIFACT-INVENTORY-V1",
+  "protocol_id": "QSA-PROTOCOL-V1",
+  "schema_version": 1
+}

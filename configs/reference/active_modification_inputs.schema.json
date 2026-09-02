@@ -1,0 +1,67 @@
+{
+  "$id": "urn:qsa:schema:active-modification-inputs:v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Active-modification input and context configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_id", "schema_version", "schedule_id", "method_profile", "method_order",
+    "input_pair", "context_profile", "expected_counts", "public_test_values",
+    "operational_use_prohibited"
+  ],
+  "properties": {
+    "schema_id": {"const": "urn:qsa:schema:active-modification-inputs:v1"},
+    "schema_version": {"const": 1},
+    "schedule_id": {"const": "QSA-ACTIVE-MODIFICATION-SCHEDULE-V1"},
+    "method_profile": {"const": "extended"},
+    "method_order": {
+      "type": "array", "minItems": 24, "maxItems": 24, "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^B[0-9]{2}_[a-z0-9_]+$"}
+    },
+    "input_pair": {
+      "type": "object", "additionalProperties": false,
+      "required": ["base_path", "base_sha256", "donor_generator_id", "donor_sha256", "shape", "dtype", "layout"],
+      "properties": {
+        "base_path": {"const": "reference/known_answers/input.rgb"},
+        "base_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "donor_generator_id": {"const": "rolled-xor-coordinate-mix-v1"},
+        "donor_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "shape": {"const": [16, 16, 3]},
+        "dtype": {"const": "uint8"},
+        "layout": {"const": "C-order RGB"}
+      }
+    },
+    "context_profile": {
+      "type": "object", "additionalProperties": false,
+      "required": ["protocol_id", "master_key_hex", "nonce_domain_ascii", "seed_domain_ascii", "public_material_domain_ascii", "base_image_id", "donor_image_id", "run_id_template", "public_metadata"],
+      "properties": {
+        "protocol_id": {"const": "QSA-ACTIVE-MODIFICATION-V1"},
+        "master_key_hex": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "nonce_domain_ascii": {"const": "QSA-ACTIVE-MODIFICATION-NONCE-V1"},
+        "seed_domain_ascii": {"const": "QSA-ACTIVE-MODIFICATION-SEED-V1"},
+        "public_material_domain_ascii": {"const": "QSA-ACTIVE-MODIFICATION-PUBLIC-MATERIAL-V1"},
+        "base_image_id": {"const": "active_base_16x16"},
+        "donor_image_id": {"const": "active_donor_16x16"},
+        "run_id_template": {"const": "active-modification|{method_id}|{role}"},
+        "public_metadata": {"type": "object"}
+      }
+    },
+    "expected_counts": {
+      "type": "object", "additionalProperties": false,
+      "required": ["total_cases", "authenticated_cases", "authenticated_rejections", "unauthenticated_cases", "unauthenticated_acceptances", "unauthenticated_rejections", "unauthenticated_plaintext_changed", "unauthenticated_plaintext_unchanged", "parser_length_violations"],
+      "properties": {
+        "total_cases": {"const": 180},
+        "authenticated_cases": {"const": 73},
+        "authenticated_rejections": {"const": 73},
+        "unauthenticated_cases": {"const": 107},
+        "unauthenticated_acceptances": {"const": 77},
+        "unauthenticated_rejections": {"const": 30},
+        "unauthenticated_plaintext_changed": {"const": 37},
+        "unauthenticated_plaintext_unchanged": {"const": 40},
+        "parser_length_violations": {"const": 48}
+      }
+    },
+    "public_test_values": {"const": true},
+    "operational_use_prohibited": {"const": true}
+  }
+}

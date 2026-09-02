@@ -1,0 +1,9 @@
+{
+  "benchmark_id": "QSA-SMOKE-V1",
+  "dataset_manifest_sha256": "6e7576ac6a7456616c673f856f7c947aee05021d45c03934502edda7368731cb",
+  "deterministic_fingerprint_sha256": "7149d2aa00453c1f8811755ea2ca8348f17aff13c224d0f7cab9d7fc037ad987",
+  "method_count": 20,
+  "reference_id": "QSA-COMPACT-FINGERPRINT-V1",
+  "run_count": 40,
+  "schema_version": 1
+}

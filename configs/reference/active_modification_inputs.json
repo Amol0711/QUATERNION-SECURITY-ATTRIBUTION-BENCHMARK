@@ -1,0 +1,70 @@
+{
+  "schema_id": "urn:qsa:schema:active-modification-inputs:v1",
+  "schema_version": 1,
+  "schedule_id": "QSA-ACTIVE-MODIFICATION-SCHEDULE-V1",
+  "method_profile": "extended",
+  "method_order": [
+    "B01_aes_gcm",
+    "B02_chacha20_poly1305",
+    "B03_shake_hmac",
+    "B04_public_high_entropy",
+    "B05_identity",
+    "B06_reversible_color",
+    "B07_pca_klt",
+    "B08_random_so3",
+    "B09_fixed_axis_quaternion",
+    "B10_caseii",
+    "B11_curvature_caseii",
+    "B12_chebyshev_only",
+    "B13_permutation_only",
+    "B14_diffusion_only",
+    "B15_geometry_shake_hmac",
+    "B16_geometry_aes_gcm",
+    "B17_tip_r0_emulation",
+    "B18_external_quaternion_feistel",
+    "B19_external_chaos_pd",
+    "B20_full_aead_explicit_preview",
+    "B21_public_fresh_pad",
+    "B22_public_wideblock_prp",
+    "B23_secure_fixed_header",
+    "B24_aes_gcm_siv"
+  ],
+  "input_pair": {
+    "base_path": "reference/known_answers/input.rgb",
+    "base_sha256": "418a11105ae874ab487c3e1a2c67a7f14b8a9ce592657c63b8ffcadfdbf708c6",
+    "donor_generator_id": "rolled-xor-coordinate-mix-v1",
+    "donor_sha256": "d7691213071b74bd37cfcc3359e0e540936cc0a06dea37cbcd5e7b809dabab94",
+    "shape": [16, 16, 3],
+    "dtype": "uint8",
+    "layout": "C-order RGB"
+  },
+  "context_profile": {
+    "protocol_id": "QSA-ACTIVE-MODIFICATION-V1",
+    "master_key_hex": "202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f",
+    "nonce_domain_ascii": "QSA-ACTIVE-MODIFICATION-NONCE-V1",
+    "seed_domain_ascii": "QSA-ACTIVE-MODIFICATION-SEED-V1",
+    "public_material_domain_ascii": "QSA-ACTIVE-MODIFICATION-PUBLIC-MATERIAL-V1",
+    "base_image_id": "active_base_16x16",
+    "donor_image_id": "active_donor_16x16",
+    "run_id_template": "active-modification|{method_id}|{role}",
+    "public_metadata": {
+      "benchmark": "QSA-ACTIVE-MODIFICATION-V1",
+      "metadata_profile": "active-modification-v1",
+      "object_semantics": "complete-public-object",
+      "schema": 1
+    }
+  },
+  "expected_counts": {
+    "total_cases": 180,
+    "authenticated_cases": 73,
+    "authenticated_rejections": 73,
+    "unauthenticated_cases": 107,
+    "unauthenticated_acceptances": 77,
+    "unauthenticated_rejections": 30,
+    "unauthenticated_plaintext_changed": 37,
+    "unauthenticated_plaintext_unchanged": 40,
+    "parser_length_violations": 48
+  },
+  "public_test_values": true,
+  "operational_use_prohibited": true
+}

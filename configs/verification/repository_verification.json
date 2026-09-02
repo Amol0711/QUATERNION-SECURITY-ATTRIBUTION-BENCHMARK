@@ -1,0 +1,32 @@
+{
+  "default_environment_policy": "exact",
+  "default_output_root": "results/verification",
+  "expected_counts": {
+    "active_modification_cases": 180,
+    "authenticated_active_modifications": 73,
+    "authenticated_constructions": 9,
+    "deterministic_artifacts": 37,
+    "deterministic_tables": 13,
+    "known_answer_cases": 24,
+    "malformed_object_vectors": 33,
+    "primitive_round_trips_across_two_executions": 96,
+    "primitive_round_trips_per_execution": 48,
+    "primitive_timing_records_per_execution": 1440,
+    "registered_constructions": 24,
+    "representative_objects": 24,
+    "timing_configurations": 576
+  },
+  "paths": {
+    "artifact_manifest": "reference/deterministic_outputs/artifact_hashes.json",
+    "compact_fingerprint": "reference/verification/compact_fingerprint.json",
+    "environment_manifest": "reference/environment/validated_environment.json",
+    "primitive_config": "configs/protocol/primitive_scaling.json"
+  },
+  "schema_version": 1,
+  "timing_limits": {
+    "absolute_median_signed_relative_difference_max": 0.1,
+    "median_absolute_relative_difference_max": 0.15,
+    "p95_absolute_relative_difference_max": 0.35
+  },
+  "verification_id": "QSA-REPOSITORY-VERIFICATION-V1"
+}
