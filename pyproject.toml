@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quaternion-security-attribution-benchmark"
+version = "1.0.0"
+description = "Executable benchmark for security attribution in quaternion image-protection pipelines"
+readme = "README.txt"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26",
+  "scipy>=1.11",
+  "pandas>=2.1",
+  "pillow>=10",
+  "scikit-image>=0.22",
+  "cryptography>=42",
+  "psutil>=5.9",
+  "PyYAML>=6",
+  "jsonschema>=4.20",
+  "scikit-learn>=1.4",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+qsa-benchmark = "qsa_benchmark.benchmark.cli:main"
+qsa-experiment = "qsa_benchmark.protocol.experiment:main"
+qsa-targeted-validation = "qsa_benchmark.protocol.targeted_validation:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"qsa_benchmark.benchmark" = ["qfeistel_fast.c"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-markers"
+testpaths = ["tests"]

@@ -1,0 +1,37 @@
+# Exact reference environment for deterministic repository verification.
+# Validated interpreter: CPython 3.13.5.
+# Ordinary installations may use the flexible constraints in requirements.txt.
+# Optional native-accelerator system requirements are recorded separately.
+
+attrs==26.1.0
+cffi==2.0.0
+cryptography==46.0.4
+imageio==2.37.3
+iniconfig==2.3.0
+joblib==1.5.3
+jsonschema==4.26.0
+jsonschema-specifications==2025.9.1
+lazy-loader==0.5
+networkx==3.6.1
+numpy==2.3.5
+packaging==25.0
+pandas==2.2.3
+pillow==12.3.0
+pluggy==1.6.0
+psutil==7.2.2
+pycparser==3.0
+pygments==2.20.0
+pytest==9.0.2
+python-dateutil==2.9.0.post0
+pytz==2026.2
+pyyaml==6.0.3
+referencing==0.37.0
+rpds-py==2026.5.1
+scikit-image==0.26.0
+scikit-learn==1.8.0
+scipy==1.17.0
+setuptools==82.0.1
+six==1.17.0
+threadpoolctl==3.6.0
+tifffile==2026.5.15
+tzdata==2026.2
