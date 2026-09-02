@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.dylib
+*.dll
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Generated data and outputs
+data/generated/
+data/manifests/
+results/
+
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
